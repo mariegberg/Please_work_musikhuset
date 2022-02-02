@@ -19,7 +19,7 @@
 Fork følgende GitHub-repository og klon derefter ind i VS Code (se evt. nedenfor).
 
 ```
-https://github.com/stefangrage/das-werk-starter.git
+https://github.com/stefangrage/surprise-delight-das-werk.git
 ```
 
 ---

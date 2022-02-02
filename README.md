@@ -1,54 +1,26 @@
 # Installation (trin-for-trin)
 
-💡 **Sådan kommer du i gang med Tailwind CSS.**
+💡 **Sådan kommer du i gang med Das Werk starter sitet.**
 
-**_OBS!_** _Det er ikke meningen, at du skal vide alt, hvad du skal i denne guide._
-
+**_OBS!_** _ Det er samme metode som sidste uges Tailwind forløb:-)
 ---
 
 **Trin:**
 
-1. Installer Node
-2. Fork og klon via GitHub
-3. Åbn Terminalen i VS Code
-4. Kør dev-server via Terminalen
-5. Brug Tailwind
+1. Fork og klon projekt via GitHub
+2. Åbn Terminalen i VS Code
+3. Kør dev-server via Terminalen
+4. Tilpas sitet, så det får en masse "surface surprise and delight"
 
 ---
 
-## 1. Installer Node
-
-Først skal du downloade og installere **Node** via [https://nodejs.org/en/download/current/](https://nodejs.org/en/download/current/)
-
-Vælg enten _macOs_ eller _Windows_
-
-<details>
-    <summary>Se eksempel</summary>
-
-![Vælg enten `macOS` eller `Windows`](/README/SCR-20220119-ld2.png)
-Vælg enten `macOS` eller `Windows`
-
-</details>
-
----
-
-## 2. Fork og klon via GitHub
+## 1. Fork og klon via GitHub
 
 Fork følgende GitHub-repository og klon derefter ind i VS Code (se evt. nedenfor).
 
 ```
-https://github.com/daviatkea/tailwind-starter-template.git
+https://github.com/stefangrage/das-werk-starter.git
 ```
-
-<details>
-    <summary>Se eksempler</summary>
-
-![Fork-knap på GitHub](/README/SCR-20220119-kk2.png)
-Fork-knap på GitHub
-![Klon via linket fra dit forket repository](/README/SCR-20220119-kpq.png)
-Klon via linket fra dit forket repository
-
-</details>
 
 ---
 
@@ -59,14 +31,6 @@ Klon via linket fra dit forket repository
 ```
 npm install
 ```
-
-<details>
-    <summary>Se eksempel</summary>
-
-![SCR-20220119-lgw.png](/README/SCR-20220119-lgw.png)
-![npm-i.jpg](/README/npm-i.jpg)
-
-</details>
 
 ---
 
@@ -83,10 +47,5 @@ Hvis du skal starte serveren igen, brug da `npm run dev` igen.
 
 ---
 
-## 5. Brug Tailwind
-
-Begynd at bruge Tailwinds hjælpeklasser til at style dit indhold. Find `index.html` under mappen `src`.
-
-Navigér derefter til [Tailwinds dokumentation](https://tailwindcss.com/docs/), for at se alle hjælpeklasser samt øvrige opsætningsmuligheder.
-
-![Untitled](/README/Untitled.png)
+## 5. Tilpas sitet, så der kommer en masse "surface surprise and delight" på det
+Tilpas sitet - tilføj ekstra css via tailwind.css filen og javascript via index.js filen.

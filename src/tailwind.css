@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 @layer components {
-  .herobackground {
-    background-image: url("imgs/punks.jpg");
+  .heroimage {
+    background-image: url("./imgs/first_img.jpg");
+  }
+
+  .yellowquote {
+    background-image: url("");
+  }
+  .bluequote {
   }
 }

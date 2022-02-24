@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer components{
-    .herobackground{
-        background-image: url('imgs/punks.jpg');
-        
-    }
+@layer components {
+  .herobackground {
+    background-image: url("imgs/punks.jpg");
+  }
 }

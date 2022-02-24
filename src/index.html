@@ -11,18 +11,54 @@
     <!-- Nav bar -->
     <div class="navbar text-neutral-content mb-2 bg-black">
       <div class="navbar-start mx-2 px-2">
-        <span class="text-4xl font-bold"> MUSIKLOFTET </span>
+        <!-- <img src="/src/imgs/logo_white_xs.svg" alt="logo" class=""> -->
+        <span class="text-4xl font-bold font-monotype"> MUSIKLOFTET </span>
       </div>
       <div class="navbar-end mx-2 hidden px-2 lg:flex">
-        <div class="flex items-stretch">
-          <a class="btn btn-ghost btn-sm rounded-btn"> Om os </a>
-          <a class="btn btn-ghost btn-sm rounded-btn"> Lokaler </a>
-          <a class="btn btn-ghost btn-sm rounded-btn"> Book </a>
-          <a class="btn btn-ghost btn-sm rounded-btn"> FAQ </a>
-          <button class="btn btn-primary">LOG IN</button>
-          <a class="btn btn-ghost btn-sm rounded-btn"> Sign up</a>
+        <div class="flex items-stretch mx-3 ">
+          <a class="btn btn-ghost  text-xl mx-3  link link-hover hover:text-primary"> Om os </a>
+          <a class="btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary  rounded-btn"> Lokaler </a>
+          <a class="btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn"> Book </a>
+          <a class="btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn"> FAQ </a>
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-primary text-xl rounded-btn">LOG IN</label>
+            <div tabindex="0" class="p-2 shadow menu dropdown-content rounded-box w-96 max-h-96 mt-4">
+              <div class="w-full min-h-screen bg-gray-100  sm:justify-center items-center pt-6 sm:pt-0">
+                <div class="w-full sm:max-w-md p-5 mx-auto ">
+                  <h2 class="mb-5 text-center text-2xl font-bold text-primary">SIGN IN</h2>
+                  <form>
+                    <div class="mb-4">
+                      <label class="block mb-1 text-primary" for="email">Email</label>
+                      <input id="email" type="text" name="email" class="py-2 px-3 border border-gray-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" />
+                    </div>
+                    <div class="mb-4">
+                      <label class="block mb-1 text-primary" for="password">Password</label>
+                      <input id="password" type="password" name="password" class="py-2 px-3 border border-gray-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" />
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input id="remember_me" type="checkbox" class="border border-gray-300 text-blue-600 shadow-sm focus:border-accent focus:ring focus:ring-accent focus:ring-opacity-50" />
+                        <label for="remember_me" class="ml-2 block text-sm leading-5 text-gray-900"> Remember me </label>
+                      </div>
+                      <a href="#" class="text-sm text-red-600"> Forgot password? </a>
+                    </div>
+                    <div class="text-center mt-6">
+                      <input type="submit" name="signin" id="signin" value="Sign In" class="p-3 rounded-lg bg-primary outline-primary text-white shadow w-32 justify-center focus:bg-blue-900 hover:bg-blue-900">
+                    </div>  
+                    <div class="mt-1 text-primary text-center">
+                      <a href="#" class="underline">Sign up for an account</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
+    </div>
+      <!--NAV END-->
+    <main></main>
+
+    <!--Footer start-->
     <script type="module" src="index.js"></script>
   </body>
 </html>

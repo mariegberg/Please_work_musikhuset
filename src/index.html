@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Starter Template</title>
+    <title>Musikloftet</title>
     <link rel="stylesheet" href="tailwind.css" />
   </head>
-
   <body>
-    <button class="btn btn-primary">Hello</button>
+    <!-- Nav bar -->
+    <div class="navbar text-neutral-content mb-2 bg-black">
+      <div class="navbar-start mx-2 px-2">
+        <span class="text-4xl font-bold"> MUSIKLOFTET </span>
+      </div>
+      <div class="navbar-end mx-2 hidden px-2 lg:flex">
+        <div class="flex items-stretch">
+          <a class="btn btn-ghost btn-sm rounded-btn"> Om os </a>
+          <a class="btn btn-ghost btn-sm rounded-btn"> Lokaler </a>
+          <a class="btn btn-ghost btn-sm rounded-btn"> Book </a>
+          <a class="btn btn-ghost btn-sm rounded-btn"> FAQ </a>
+          <button class="btn btn-primary">LOG IN</button>
+          <a class="btn btn-ghost btn-sm rounded-btn"> Sign up</a>
+        </div>
+      </div>
     <script type="module" src="index.js"></script>
   </body>
 </html>

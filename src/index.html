@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="tailwind.css" />
   </head>
   <body>
+    <header>
     <!-- Nav bar -->
     <div class="navbar text-neutral-content mb-2 bg-black">
       <div class="navbar-start mx-2 px-2">
@@ -55,8 +56,64 @@
         </div>
       </div>
     </div>
+  </header>
       <!--NAV END-->
-    <main></main>
+    <main>
+
+      <section>
+        <div class="flex flex-row items-center justify-items-center">
+          <div class="ml-36 flex-auto">
+            <img class="" src="imgs/plantegning.svg" alt="" />
+          </div>
+          <div class="grid flex-auto grid-cols-1 gap-3">
+            <button
+              id="small-button"
+              class="btn btn-circle k translate:110 h-20 w-20 border-none bg-white text-black shadow-xl shadow outline outline-black hover:scale-110 hover:bg-black hover:text-white hover:outline-black"
+            >
+              Lille
+            </button>
+            <button
+              id="medium-button"
+              class="btn btn-circle hover:bg-accent hover:outline-accent outline-accent hover:text-blackshadow-lg h-20 w-20 border-none bg-white text-black shadow shadow-xl outline transition-transform hover:scale-110"
+            >
+              mellem
+            </button>
+            <button
+              id="large-button"
+              class="btn btn-circle hover:bg-primary-focus hover:outline-primary-focus outline-primary-focus h-20 w-20 border-none bg-white text-black shadow-xl shadow outline transition-transform hover:scale-110 hover:text-white"
+            >
+              stor
+            </button>
+          </div>
+          <div class="flex-auto">
+            <img
+              class="shadow-xl shadow"
+              id="calendar"
+              alt=""
+              src="imgs/Calendar empty.svg"
+            />
+            <img
+              id="calendars"
+              alt=""
+              class="hidden shadow-xl shadow"
+              src="imgs/Calendar Small Room.svg"
+            />
+            <img
+              id="calendarm"
+              alt=""
+              class="hidden shadow-xl shadow"
+              src="imgs/Calendar Medium Room.svg"
+            />
+            <img
+              id="calendarl"
+              alt=""
+              class="hidden shadow-xl shadow"
+              src="imgs/Calendar Large Room.svg"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!--Footer start-->
     <script type="module" src="index.js"></script>

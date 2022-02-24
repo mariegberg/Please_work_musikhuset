@@ -8,8 +8,9 @@
   }
 
   .yellowquote {
-    background-image: url("");
+    background-image: url("./imgs/img5.jpg");
   }
   .bluequote {
+    background-image: url("./imgs/blue6.jpg");
   }
 }

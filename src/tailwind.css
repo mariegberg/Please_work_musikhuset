@@ -18,6 +18,13 @@
     background-image: url("./imgs/blue5.jpg");
   }
 
+  .lokalerhero {
+    background-image: url("./imgs/blue2.jpg");
+  }
+  .lokaleryellow {
+    background-image: url("./imgs/img7.jpg");
+  }
+
   .kontaktimg {
     background-image: url("./imgs/img8.jpg");
     .lokalerhero {

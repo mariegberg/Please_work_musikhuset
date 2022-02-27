@@ -16,12 +16,12 @@
       </div>
       <div class="navbar-end mx-2 hidden px-2 lg:flex">
         <div class="flex items-stretch mx-3 ">
-          <a class="btn btn-ghost  text-xl mx-3  link link-hover hover:text-primary" href="/src/index.html"> Om os </a>
-          <a class="btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary  rounded-btn" href="/src/lokaler.html"> Lokaler </a>
-          <a class="btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn" href="/src/index.html#booking"> Book </a>
-          <a class="btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn" href="/src/faq.html"> FAQ </a>
+          <a class="cursor-pointer btn btn-ghost  text-xl mx-3  link link-hover hover:text-primary" href="/src/index.html"> Om os </a>
+          <a class="cursor-pointer btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary  rounded-btn" href="/src/lokaler.html"> Lokaler </a>
+          <a class=" cursor-pointer btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn" href="/src/index.html#booking"> Book </a>
+          <a class="cursor-pointer btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn" href="/src/faq.html"> FAQ </a>
           <div class="dropdown dropdown-end">
-            <label tabindex="0" class="btn btn-primary text-xl rounded-btn">LOG IN</label>
+            <label tabindex="0" class="btn btn-primary text-ml rounded-btn">LOG IN</label>
             <div tabindex="0" class="p-2 shadow menu dropdown-content rounded-box w-96 max-h-96 mt-4">
               <div class="w-full min-h-screen bg-gray-100  sm:justify-center items-center pt-6 sm:pt-0">
                 <div class="w-full sm:max-w-md p-5 mx-auto ">
@@ -58,17 +58,20 @@
     </header>
 
     <!-- MAIN START -->
-    <main class="grid grid-rows-6 ">
+    <main>
+      <div class="grid grid-rows-5 ">
 
       <!-- Hero IMG -->
-      <section class="heroimage max-w-50% bg-no-repeat fade-in">
+      <section class=" cursor-s-resize 	heroimage max-w-50% max-h-screen bg-no-repeat fade-in ">
         <!-- <img src="/src/imgs/274158411_4392117337555293_4768928660011175139_n.jpg" alt=""> -->
-        <h1 class="text-9xl font-bold opacity-70 text-center mt-96">MUSIKLOFTET</h1>
+        <h1 class="text-9xl text-white font-bold opacity-85 text-center mt-96 ">MUSIKLOFTET</h1>
+        <a href="#sec1" title="">
+        <img alt="" src="imgs/down-arrow.svg" class="mt-20 absolute ml-20 animate-bounce"></a>
       </section>
       
 
       <!-- OM OS -->
-      <section class="grid grid-cols-2 mx-32">
+      <section class="grid grid-cols-2 mx-32 mt-10 mb-32" id="sec1">
         <div class="w-28 h-auto pt-8 ml-20">
           <img src="/src/imgs/om_os.svg" alt="Om os" class="">
         </div>
@@ -88,14 +91,14 @@
       </section>
 
       <!-- LOKALER -->
-      <section class="grid grid-cols-2 mx-32  ">
+      <section class="grid grid-cols-2 mx-32 mt-14 mb-14 ">
         <div class="prose mt-5 text-xl ">
           <p>Musikloftet har otte øvelokaler på øverste etage af en gammel industribygning på Prøvestenen i København.  
             Vi tilbyder tre typer lokaler, som alle er baggearslokaler: Ét lille lokale på 10m2, fire mellem lokaler (16-22 m2) og tre store lokaler (33-36m2). Dertil er der fælles toilet på gangen og et lille fælleskøkken med tagterasse, hvor man kan nyde et glas om sommeren.
             
             Lokalerne lejes for et tidsrum på tre timer én dag om ugen - nok til en god øver. Alle lokalerne er godt støjdæmpede, og er udstyret med det nødvendige for at spille. <br>  <br> Se udstyr og ledige tider i lokalebeskrivelserne nedenfor.
           </p>
-          <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary mt-14 ml-40">
+          <button class="cursor-pointer btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary mt-14 ml-40">
             <a href="/src/lokaler.html" class="">LÆS MERE</a>
           </button>
         </div>
@@ -105,28 +108,28 @@
       </section>
 
       <!-- QUOTE CAROUSEL -->
-      <section>
+      <section >
         <div class="w-screen carousel">
           <div id="slide1" class="relative w-screen carousel-item">
-            <div class="yellowquote flex flex-grow flex-row items-center justify-items-center bg-no-repeat">
+            <div class="yellowquote w-screen  flex flex-grow flex-row items-center justify-items-center bg-no-repeat">
               <div  class=" text-white text-6xl h-auto w-1/2 ml-40">"Musikloftet giver os nogle fed rammer til både at øve os og giver vores band et samlingspunkt"<br><span class="text-black text-2xl">- Sebastian, 25 år</span></div>
             </div>
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div class="absolute flex  justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" class="btn btn-circle">❮</a> 
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div> 
           <div id="slide2" class="relative w-screen carousel-item">
-            <div class="bluequote flex flex-grow flex-row items-center justify-items-center bg-no-repeat">
+            <div class="bluequote flex w-screen flex-grow flex-row items-center justify-items-center bg-no-repeat">
               <div  class=" text-white text-6xl h-auto w-1/4 ml-40">“Det er nice man kan booke lokalerne i perioder hvor vi har mere brug for at øve end andre” <br><span class="text-black text-2xl">- Johanne, 28 år</span></div>
             </div>
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div class="absolute flex justify-between  transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" class="btn btn-circle">❮</a> 
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
           </div>
           <div id="slide3" class="relative w-screen carousel-item">
-            <div class="thirdquote flex flex-grow flex-row items-center justify-items-center bg-no-repeat">
+            <div class="thirdquote w-screen flex flex-grow flex-row items-center justify-items-center bg-no-repeat">
               <div  class=" text-white text-6xl h-auto w-1/2 ml-40">“Udover lokalet vi lejer er tagteressen også rigtig nice, og en fed mulighed for at møde andre musikere.” <br><span class="text-black text-2xl">- Hugo, 22 år</span></div>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -135,14 +138,11 @@
             </div>
           </div> 
         </div>
-      </section>
-      <!-- <section class="yellowquote flex flex-grow flex-row items-center justify-items-center bg-no-repeat">
-        
-        <div  class=" text-white text-6xl h-auto w-1/2 ml-40">"Musikloftet giver os nogle fed rammer til både at øve os og giver vores band et samlingspunkt"<br><span class="text-black text-2xl">- Sebastian, 25 år</span></div>
-     </section> -->
+      </section> 
+    
 
-      <!-- BOOKING -->
-      <section class="mt-5 mb-20" id="booking">
+   
+      <section class=" mb-32" id="booking">
         <div class="text-center">
           <h1 class="text-3xl font-bold ">Booking</h1>
         </div>
@@ -165,19 +165,19 @@
           <div class="grid flex-auto grid-cols-1 gap-3">
             <button
               id="small-button"
-              class="btn btn-circle k translate:110 h-20 w-20 border-none bg-white text-black shadow-xl outline outline-black hover:scale-110 hover:bg-black hover:text-white hover:outline-black"
+              class="cursor-pointer btn btn-circle k translate:110 h-20 w-20 border-none bg-white text-black shadow-xl outline outline-black hover:scale-110 hover:bg-black hover:text-white hover:outline-black"
             >
               Lille
             </button>
             <button
               id="medium-button"
-              class="btn btn-circle hover:bg-accent hover:outline-accent outline-accent hover:text-blackshadow-lg h-20 w-20 border-none bg-white text-black shadow-xl outline transition-transform hover:scale-110"
+              class="cursor-pointer btn btn-circle hover:bg-accent hover:outline-accent outline-accent hover:text-blackshadow-lg h-20 w-20 border-none bg-white text-black shadow-xl outline transition-transform hover:scale-110"
             >
               mellem
             </button>
             <button
               id="large-button"
-              class="btn btn-circle hover:bg-primary-focus hover:outline-primary-focus outline-primary-focus h-20 w-20 border-none bg-white text-black shadow-xl outline transition-transform hover:scale-110 hover:text-white"
+              class="cursor-pointer btn btn-circle hover:bg-primary-focus hover:outline-primary-focus outline-primary-focus h-20 w-20 border-none bg-white text-black shadow-xl outline transition-transform hover:scale-110 hover:text-white"
             >
               stor
             </button>
@@ -211,12 +211,14 @@
           </div>
         </div>
       </section>
-
+    </div>
+    <div class="grid grid-rows-1">
       <!-- QUOTE BLUE -->
       <section class="bluequote3 max-w-50% flex flex-row items-center justify-items-center">
         
         <div  class=" text text-6xl h-auto w-1/4 ml-40 opacity-0 ">"Musikloftet giver os nogle fed rammer til både at øve os og giver vores band et samlingspunkt"<br><span class="text-black text-2xl">- Sebastian, 25 år</span></div>
      </section>
+    </div>
     </main>
 
     <!--Footer start-->

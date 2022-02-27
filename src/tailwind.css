@@ -4,34 +4,34 @@
 
 @layer components {
   .heroimage {
-    background-image: url("./imgs/first_img.jpg");
+    background-image: url("imgs/first_img.jpg");
   }
 
   .yellowquote {
-    background-image: url("./imgs/img5.jpg");
+    background-image: url("imgs/img5.jpg");
   }
   .bluequote {
-    background-image: url("./imgs/blue6.jpg");
+    background-image: url("imgs/blue6.jpg");
   }
   .bluequote3 {
-    background-image: url("./imgs/blue3.jpg");
+    background-image: url("imgs/blue3.jpg");
   }
   .lokalerhero {
-    background-image: url("./imgs/blue2.jpg");
+    background-image: url("imgs/blue2.jpg");
   }
 
   .faqimage {
-    background-image: url("./imgs/blue5.jpg");
+    background-image: url("imgs/blue5.jpg");
   }
 
   .thirdquote {
-    background-image: url("./imgs/img3.jpg");
+    background-image: url("imgs/img3.jpg");
   }
 
   .kontaktimg {
-    background-image: url("./imgs/img8.jpg");
+    background-image: url("imgs/img8.jpg");
     .lokalerhero {
-      background-image: url("./imgs/blue1.jpg");
+      background-image: url("imgs/blue1.jpg");
     }
   }
 

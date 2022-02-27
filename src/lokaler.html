@@ -19,12 +19,12 @@
       </div>
       <div class="navbar-end mx-2 hidden px-2 lg:flex">
         <div class="flex items-stretch mx-3 ">
-          <a class="btn btn-ghost  text-xl mx-3  link link-hover hover:text-primary" href="/src/index.html"> Om os </a>
-          <a class="btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary  rounded-btn" href="/src/lokaler.html"> Lokaler </a>
-          <a class="btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn" href="/src/index.html#booking"> Book </a>
-          <a class="btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn" href="/src/faq.html"> FAQ </a>
+          <a class="cursor-pointer btn btn-ghost  text-xl mx-3  link link-hover hover:text-primary" href="/src/index.html"> Om os </a>
+          <a class="cursor-pointer btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary  rounded-btn" href="/src/lokaler.html"> Lokaler </a>
+          <a class="cursor-pointer btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn" href="/src/index.html#booking"> Book </a>
+          <a class="cursor-pointer btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn" href="/src/faq.html"> FAQ </a>
             <div class="dropdown dropdown-end">
-              <label tabindex="0" class="btn btn-primary text-xl rounded-btn">LOG IN</label>
+              <label tabindex="0" class="btn btn-primary text-ml rounded-btn">LOG IN</label>
               <div tabindex="0" class="p-2 shadow menu dropdown-content rounded-box w-96 max-h-96 mt-4">
                 <div class="w-full min-h-screen bg-gray-100  sm:justify-center items-center pt-6 sm:pt-0">
                   <div class="w-full sm:max-w-md p-5 mx-auto ">
@@ -62,21 +62,24 @@
     <main>
       <div class="grid grid-rows-6">
               <!-- Hero IMG -->
-            <section class="lokalerhero max-w-50% fade-in">
+            <section class="cursor-s-resize	lokalerhero max-w-50% fade-in">
               <!-- <img src="/src/imgs/274158411_4392117337555293_4768928660011175139_n.jpg" alt=""> -->
-              <h1 class="text-9xl font-bold text-white opacity-60 text-center mt-96 titlefont">LOKALER</h1>
+              <h1 class="text-9xl text-white font-bold opacity-85 text-center mt-96 titlefont">LOKALER</h1>
+              <a href="#sec1" title="">
+                <img alt="" src="imgs/down-arrow.svg" class="mt-20 absolute ml-20 animate-bounce"></a>
             </section>
       
             <!-- OVERSIGT -->
       
-            <section class="flex flex-row justify-center mt-20 mb-20">
-                  <div class=" mt-20 text-xl prose  ">
-                      <h1 class="text-4xl text-center mt-10 titlefont">OVERSIGT</h1>
-                      <p class="mx-20 bodyfont prose">Musikloftet er 8 hyggelige øvelokaler på toppen af Prøvestenen i København. Vi har tre størrelser af vores lokaler efter hvad du leder efter.
-                      </p> 
-                      <p class="mx-20 bodyfont prose">Det lille lokale er ca. 10m2 og koster 300/måned for tre timer én dag om ugen.</p>
-                      <p class="mx-20 bodyfont prose">De fire mellemstore lokaler er mellem 16 og 22m2 og koster 600kr/måned for tre timer én dag om ugen.</p>
-                      <p class="mx-20 bodyfont prose">De tre store lokaler er mellem 33 og 36m2 og koster 800kr/måned for tre timer én dag om ugen.</p>
+            <section id="sec1" class="flex flex-row justify-center mt-32 mb-0">
+                
+                  <div class="prose mt-20 text-xl ">
+                    <h1 class="text-4xl text-center mt-10 titlefont">OVERSIGT</h1>
+                    <p class="mx-20 bodyfont prose">Musikloftet er 8 hyggelige øvelokaler på toppen af Prøvestenen i København. Vi har tre størrelser af vores lokaler efter hvad du leder efter.
+                    </p> 
+                    <p class="mx-20 bodyfont prose">Det lille lokale er ca. 10m2 og koster 300/måned for tre timer én dag om ugen.</p>
+                    <p class="mx-20 bodyfont prose">De fire mellemstore lokaler er mellem 16 og 22m2 og koster 600kr/måned for tre timer én dag om ugen.</p>
+                    <p class="mx-20 bodyfont prose">De tre store lokaler er mellem 33 og 36m2 og koster 800kr/måned for tre timer én dag om ugen.</p>
                     </div>
                   <div>
                       <img src="/src/imgs/plantegning2.svg" alt="Plantegning">
@@ -94,7 +97,7 @@
       
             <!-- SMALL ROOM -->
       
-            <section>
+            <section class="">
               <div class="text-center">
                 <h1 class="text-3xl font-bold titlefont">DET LILLE LOKALE</h1>
               </div>
@@ -141,7 +144,7 @@
               </div>
             </section>
             <!-- MEDIUM ROOM -->
-            <section>
+            <section class="mt-4 mb-24">
               <div class="text-center">
                 <h1 class="text-3xl font-bold titlefont">MELLEM LOKALER</h1>
               </div>
@@ -193,7 +196,7 @@
               </div>
             </section>
             <!-- BIG ROOM -->
-            <section class="mt-6 mb-20">
+            <section class=" mb-24">
               <div class="text-center">
                 <h1 class="text-3xl font-bold titlefont">STORE LOKALER</h1>
               </div>

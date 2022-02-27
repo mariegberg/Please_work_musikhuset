@@ -31,4 +31,12 @@
       background-image: url("./imgs/blue1.jpg");
     }
   }
+
+  .bodyfont {
+    font-family: lora, serif;
+  }
+
+  .titlefont {
+    font-family: archivo, sans-serif;
+  }
 }

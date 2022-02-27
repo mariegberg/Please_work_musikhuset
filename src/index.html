@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musikloftet</title>
     <link rel="stylesheet" href="tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Lora&display=swap" rel="stylesheet"> 
   </head>
   <body class="">
     <!-- Nav bar -->
-    <header class="navbar text-neutral-content  bg-black">
+    <header class="navbar text-neutral-content titlefont bg-black">
       <div class="navbar-start mx-2 px-2">
         <!-- <img src="/src/imgs/logo_white_xs.svg" alt="logo" class="max-w-50%"> -->
         <span class="text-4xl font-bold font-monotype"><a href="/src/index.html">MUSIKLOFTET</a></span>
@@ -61,9 +64,9 @@
     <main class="grid grid-rows-6">
 
       <!-- Hero IMG -->
-      <section class="heroimage max-w-50% bg-no-repeat">
+      <section class="heroimage max-w-screen bg-no-repeat">
         <!-- <img src="/src/imgs/274158411_4392117337555293_4768928660011175139_n.jpg" alt=""> -->
-        <h1 class="text-9xl font-bold opacity-70 text-center mt-96">MUSIKLOFTET</h1>
+        <h1 class="text-9xl font-bold opacity-70 text-center mt-96 titlefont">MUSIKLOFTET</h1>
       </section>
       
 
@@ -72,11 +75,13 @@
         <div class="w-28 h-auto pt-8 ml-20">
           <img src="/src/imgs/om_os.svg" alt="Om os" class="">
         </div>
-        <div class="prose mt-20 text-xl ">
+        <div class="bodyfont mt-20 text-xl ">
           <p>Musikloftet er 8 hyggelige øvelokaler på toppen af Prøvestenen i København. Øvelokalerne ligger i en gammel industribygning, som huser både kreative værksteder, atelierer og fotostudier. 
-          Øvelokalerne blev etableret i 2018 med den tanke at det skal være let at finde og dele et øvelokale. De fleste bands øver kun én gang om ugen, så Musikloftets mål er at gøre det let at dele sit øvelokale med andre: Vi har udelukkende baggearslokaler udstyret med alt det tunge/besværlige udstyr: Trommer, forstærkere og PA-anlæg. Så som band/orkester gælder det bare om at tage guitaren eller bassen over skulderen, og komme fast én dag om ugen. 
-          <br> God spillelyst!
-          </p>
+          Øvelokalerne blev etableret i 2018 med den tanke at det skal være let at finde og dele et øvelokale.
+          </p> <br>
+          <p> De fleste bands øver kun én gang om ugen, så Musikloftets mål er at gøre det let at dele sit øvelokale med andre: <br>  Vi har udelukkende baggearslokaler udstyret med alt det tunge/besværlige udstyr: Trommer, forstærkere og PA-anlæg. Så som band/orkester gælder det bare om at tage guitaren eller bassen over skulderen, og komme fast én dag om ugen. 
+          </p> 
+          <p><br> God spillelyst!</p>
         </div>
       </section>
 
@@ -89,24 +94,27 @@
 
       <!-- LOKALER -->
       <section class="grid grid-cols-2 mx-32  ">
-        <div class="prose mt-5 text-xl ">
+        <div class="bodyfont mt-5 text-xl ">
           <p>Musikloftet har otte øvelokaler på øverste etage af en gammel industribygning på Prøvestenen i København.  
-            Vi tilbyder tre typer lokaler, som alle er baggearslokaler: Ét lille lokale på 10m2, fire mellem lokaler (16-22 m2) og tre store lokaler (33-36m2). Dertil er der fælles toilet på gangen og et lille fælleskøkken med tagterasse, hvor man kan nyde et glas om sommeren.
-            
-            Lokalerne lejes for et tidsrum på tre timer én dag om ugen - nok til en god øver. Alle lokalerne er godt støjdæmpede, og er udstyret med det nødvendige for at spille. <br>  <br> Se udstyr og ledige tider i lokalebeskrivelserne nedenfor.
+            Vi tilbyder tre typer lokaler, som alle er baggearslokaler:
+          </p> <br>
+          <p> <strong> Ét lille lokale på 10m2, fire mellem lokaler (16-22 m2) og tre store lokaler (33-36m2)</strong></p> <br>
+          <p> Dertil er der fælles toilet på gangen og et lille fælleskøkken med tagterasse, hvor man kan nyde et glas om sommeren.
+          </p>
+          <P>Lokalerne lejes for et tidsrum på tre timer én dag om ugen - nok til en god øver. Alle lokalerne er godt støjdæmpede, og er udstyret med det nødvendige for at spille. <br>  <br> Læs mere om vores udstyr og lokaler.
           </p>
           <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary mt-14 ml-40">
-            <a href="/src/lokaler.html" class="">LÆS MERE</a>
+            <a href="/src/lokaler.html" class="titlefont">LÆS MERE</a>
           </button>
         </div>
-        <div class="w-20 h-auto pt-8 ml-60">
+        <div class="w-20 h-auto ml-80">
           <img src="/src/imgs/lokaler_ny.svg" alt="Om os" class="">
         </div>
       </section>
 
       <!-- QUOTE CAROUSEL -->
       <section>
-        <div class="w-screen carousel">
+        <div class="w-screen carousel titlefont">
           <div id="slide1" class="relative w-screen carousel-item">
             <div class="yellowquote flex flex-grow flex-row items-center justify-items-center bg-no-repeat">
               <div  class=" text-white text-6xl h-auto w-1/2 ml-40">"Musikloftet giver os nogle fed rammer til både at øve os og giver vores band et samlingspunkt"<br><span class="text-black text-2xl">- Sebastian, 25 år</span></div>
@@ -118,7 +126,7 @@
           </div> 
           <div id="slide2" class="relative w-screen carousel-item">
             <div class="bluequote flex flex-grow flex-row items-center justify-items-center bg-no-repeat">
-              <div  class=" text-white text-6xl h-auto w-1/4 ml-40">“Det er nice man kan booke lokalerne i perioder hvor vi har mere brug for at øve end andre” <br><span class="text-black text-2xl">- Johanne, 28 år</span></div>
+              <div  class=" text-white text-6xl h-auto w-1/4 ml-40">“Det er nice man kan booke lokalerne i perioder hvor vi har mere brug for at øve end andre” <br><span class="text-white text-2xl">- Johanne, 28 år</span></div>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" class="btn btn-circle">❮</a> 
@@ -142,19 +150,19 @@
      </section> -->
 
       <!-- BOOKING -->
-      <section class="mt-5 mb-20" id="booking">
+      <section class="mb-20" id="booking">
         <div class="text-center">
-          <h1 class="text-3xl font-bold ">Booking</h1>
+          <h1 class="text-6xl titlefont font-bold ">Booking</h1>
         </div>
         <div class="border-b-2 border-black h-4 ml-40 mr-40"></div>
-        <div class="text-center mx-80 my-14 text-xl">
+        <div class="text-center mx-80 my-14 text-xl bodyfont">
           <p>Musikloftet har 8 hyggelige øvelokaler på øverste etage af en gammel industribygning på Prøvestenen i København. 
 
-            Vores priser ligger på hhv. 300kr (lille) , 500kr (mellem) og 800kr (stor) pr. rum pr. måned.  
-            For at læse mere om hvad de forskellige rum indeholder, følg knappen. 
+            Vores priser ligger på hhv. <strong>300kr</strong> (lille) , <strong>500kr</strong> (mellem) og <strong>800kr</strong> (stor) pr. rum pr. måned.  
+            <br> <br>For at læse mere om hvad de forskellige rum indeholder, følg knappen. 
           </p>
           <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary mt-14">
-            <a href="/src/lokaler.html" class="">LÆS MERE</a>
+            <a href="/src/lokaler.html" class="titlefont">LÆS MERE</a>
           </button>
         </div>
         
@@ -220,7 +228,7 @@
     </main>
 
     <!--Footer start-->
-   <footer class="p-20 footer bg-black">
+   <footer class="p-20 footer bg-black titlefont">
       <div class="m-10 text-2xl space-y-6 text-white">
         <a class="link link-hover hover:text-primary" href="/src/index.html">OM OS</a> 
         <a class="link link-hover hover:text-accent" href="/src/lokaler.html">LOKALER</a> 

@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lokaler</title>
     <link rel="stylesheet" href="tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Lora&display=swap" rel="stylesheet"> 
   </head>
   <body>
       <!-- Nav bar -->
-    <header class="navbar text-neutral-content  bg-black">
+    <header class="navbar text-neutral-content titlefont bg-black">
         <div class="navbar-start mx-2 px-2">
           <!-- <img src="/src/imgs/logo_white_xs.svg" alt="logo" class=""> -->
           <span class="text-4xl font-bold font-monotype"><a href="/src/index.html">MUSIKLOFTET</a></span>
@@ -61,20 +64,19 @@
               <!-- Hero IMG -->
             <section class="lokalerhero max-w-50%">
               <!-- <img src="/src/imgs/274158411_4392117337555293_4768928660011175139_n.jpg" alt=""> -->
-              <h1 class="text-9xl font-bold opacity-70 text-center mt-96">LOKALER</h1>
+              <h1 class="text-9xl font-bold text-white opacity-60 text-center mt-96 titlefont">LOKALER</h1>
             </section>
       
             <!-- OVERSIGT -->
       
             <section class="flex flex-row justify-center mt-20 mb-20">
-                
-                  <div class="prose mt-20 text-xl ">
-                      <h1 class="text-4xl text-center mt-10">OVERSIGT</h1>
-                        <p class="mx-20">Musikloftet er 8 hyggelige øvelokaler på toppen af Prøvestenen i København. Vi har tre størrelser af vores lokaler efter hvad du leder efter.
-          
-                          Det lille lokale er ca. 10m2 og koster 300/måned for tre timer én dag om ugen.
-                          De fire mellemstore lokaler er mellem 16 og 22m2 og koster 600kr/måned for tre timer én dag om ugen.
-                          De tre store lokaler er mellem 33 og 36m2 og koster 800kr/måned for tre timer én dag om ugen.</p>
+                  <div class=" mt-20 text-xl prose  ">
+                      <h1 class="text-4xl text-center mt-10 titlefont">OVERSIGT</h1>
+                      <p class="mx-20 bodyfont prose">Musikloftet er 8 hyggelige øvelokaler på toppen af Prøvestenen i København. Vi har tre størrelser af vores lokaler efter hvad du leder efter.
+                      </p> 
+                      <p class="mx-20 bodyfont prose">Det lille lokale er ca. 10m2 og koster 300/måned for tre timer én dag om ugen.</p>
+                      <p class="mx-20 bodyfont prose">De fire mellemstore lokaler er mellem 16 og 22m2 og koster 600kr/måned for tre timer én dag om ugen.</p>
+                      <p class="mx-20 bodyfont prose">De tre store lokaler er mellem 33 og 36m2 og koster 800kr/måned for tre timer én dag om ugen.</p>
                     </div>
                   <div>
                       <img src="/src/imgs/plantegning2.svg" alt="Plantegning">
@@ -94,20 +96,20 @@
       
             <section>
               <div class="text-center">
-                <h1 class="text-3xl font-bold ">DET LILLE LOKALE</h1>
+                <h1 class="text-3xl font-bold titlefont">DET LILLE LOKALE</h1>
               </div>
-              <div class=" h-8 mr-40 ml-40 border-b-2 border-black flex flex-row justify-between items-end">
+              <div class=" h-8 mr-40 ml-40 border-b-2 border-black flex flex-row justify-between items-end bodyfont">
                 <div class="text-black text-ml">10m<sup>2</sup></div>
                 <div class="text-black text-ml ">3 timer om ugen</div>
               </div>
-              <div class=" h-8 mr-40 ml-40 flex flex-row justify-end items-start">
+              <div class=" h-8 mr-40 ml-40 flex flex-row justify-end items-start bodyfont">
                 <div class="text-black text-ml ">300kr om måneden</div>
               </div>
               <div class="flex flex-row justify-around ml-40 mr-40 mt-10 mb-10">
-              <div class="text-black text-lg mt-10 w-96">Det lille lokale er ca. 10m<sup>2</sup>, og er oplagt for små bands/orkestre, der ikke har en trommeslager. 
+              <div class="text-black text-lg mt-10 w-96 bodyfont">Det lille lokale er ca. 10m<sup>2</sup>, og er oplagt for små bands/orkestre, der ikke har en trommeslager. 
       <br><br>
                 Det lille lokale koster 300/måned for tre timer én dag om ugen, og bindingsperioden for leje af et lokale er løbende måned + 30 dage. Se ledige tider i tabellen nedenfor. </div>
-            <div class="w-96">
+            <div class="w-96 bodyfont">
               <div class="text-black text-lg font-bold ml-5">Lokalet er udstyret med:</div>
                 <ul class="list-disc ml-10">
               <li class="text-black text-lg mb-2">2 stk. Bronco Deville 2X10 Guitarcombo
@@ -124,7 +126,7 @@
               </li>
             </ul></div>
           </div>
-            <div class=" grid items-center justify-items-center">
+            <div class=" grid items-center justify-items-center titlefont">
                 <button id="lille-lokal-button" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary mt-14">
                   BOOK NU
                 </button>
@@ -141,20 +143,20 @@
             <!-- MEDIUM ROOM -->
             <section>
               <div class="text-center">
-                <h1 class="text-3xl font-bold ">MELLEM LOKALER</h1>
+                <h1 class="text-3xl font-bold titlefont">MELLEM LOKALER</h1>
               </div>
-              <div class=" h-8 mr-40 ml-40 border-b-2 border-black flex flex-row justify-between items-end">
+              <div class=" h-8 mr-40 ml-40 border-b-2 border-black flex flex-row justify-between items-end bodyfont">
                 <div class="text-black text-ml">16-22m<sup>2</sup></div>
                 <div class="text-black text-ml ">3 timer om ugen</div>
               </div>
-              <div class=" h-8 mr-40 ml-40 flex flex-row justify-end items-start">
+              <div class=" h-8 mr-40 ml-40 flex flex-row justify-end items-start bodyfont">
                 <div class="text-black text-ml ">500kr om måneden</div>
               </div>
               <div class="flex flex-row justify-around ml-40 mr-40 mt-10 mb-10">
-              <div class="text-black text-lg mt-10 w-96">De fire mellemstore lokaler er mellem 16 og 22m<sup>2</sup>, og er oplagt for mindre rockbands med trommer - typisk tre-fire bandmedlemmer.  
+              <div class="text-black text-lg mt-10 w-96 bodyfont">De fire mellemstore lokaler er mellem 16 og 22m<sup>2</sup>, og er oplagt for mindre rockbands med trommer - typisk tre-fire bandmedlemmer.  
       <br><br>
       Et mellem lokale koster 500/måned for tre timer én dag om ugen, og bindingsperioden for leje af et lokale er løbende måned + 30 dage. Se ledige tider i tabellen nedenfor. </div>
-            <div class="w-96">
+            <div class="w-96 bodyfont">
               <div class="text-black text-lg font-bold ml-5">Lokalet er udstyret med:</div>
                 <ul class="list-disc ml-10">
               <li class="text-black text-lg mb-2">2 stk. Bronco Deville 2X10 Guitarcombo
@@ -175,7 +177,7 @@
               </li>
             </ul></div>
           </div>
-            <div class=" grid items-center justify-items-center">
+            <div class=" grid items-center justify-items-center titlefont">
                 <button id="mellem-lokal-button" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary mt-14">
                   BOOK NU
                 </button>
@@ -193,20 +195,20 @@
             <!-- BIG ROOM -->
             <section class="mt-6 mb-20">
               <div class="text-center">
-                <h1 class="text-3xl font-bold ">STORE LOKALER</h1>
+                <h1 class="text-3xl font-bold titlefont">STORE LOKALER</h1>
               </div>
-              <div class=" h-8 mr-40 ml-40 border-b-2 border-black flex flex-row justify-between items-end">
+              <div class=" h-8 mr-40 ml-40 border-b-2 border-black flex flex-row justify-between items-end bodyfont">
                 <div class="text-black text-ml">30-33m<sup>2</sup></div>
                 <div class="text-black text-ml ">3 timer om ugen</div>
               </div>
-              <div class=" h-8 mr-40 ml-40 flex flex-row justify-end items-start">
+              <div class=" h-8 mr-40 ml-40 flex flex-row justify-end items-start bodyfont">
                 <div class="text-black text-ml ">800kr om måneden</div>
               </div>
               <div class="flex flex-row justify-around ml-40 mr-40 mt-10 mb-10">
-              <div class="text-black text-lg mt-10 w-96">De tre store lokaler er mellem 33 og 36m<sup>2</sup>, så her er der plads til det helt store funk-band, og så er der også en lille lounge-afdeling til at tage en chiller.  
+              <div class="text-black text-lg mt-10 w-96 bodyfont">De tre store lokaler er mellem 33 og 36m<sup>2</sup>, så her er der plads til det helt store funk-band, og så er der også en lille lounge-afdeling til at tage en chiller.  
       <br><br>
       Et stort lokale koster 800/måned for tre timer én dag om ugen, og bindingsperioden for leje af et lokale er løbende måned + 30 dage. Se ledige tider i tabellen nedenfor.  </div>
-            <div class="w-96">
+            <div class="w-96 bodyfont">
               <div class="text-black text-lg font-bold ml-5">Lokalet er udstyret med:</div>
                 <ul class="list-disc ml-10">
               <li class="text-black text-lg mb-2">3 stk. Bronco Deville 4X10 Guitarcombo
@@ -229,7 +231,7 @@
               </li>
             </ul></div>
           </div>
-            <div class=" grid items-center justify-items-center">
+            <div class=" grid items-center justify-items-center titlefont">
                 <button id="store-lokal-button" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary mt-14">
                   BOOK NU
                 </button>
@@ -246,7 +248,7 @@
           </main>
 
     <!--Footer start-->
-    <footer class="p-20 footer bg-black">
+    <footer class="p-20 footer bg-black titlefont">
         <div class="m-10 text-2xl space-y-6 text-white">
           <a class="link link-hover hover:text-primary" href="/src/index.html">OM OS</a> 
           <a class="link link-hover hover:text-accent" href="/src/lokaler.html">LOKALER</a> 

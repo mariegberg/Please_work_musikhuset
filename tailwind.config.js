@@ -45,7 +45,12 @@ module.exports = {
     ],
   },
   theme: {},
-  extend: {},
+  extend: {
+    fontFamily: {
+      lora: ["lora", "serif"],
+      archivo: ["archivo", "sans-serif"],
+    },
+  },
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),

@@ -1,278 +1,1598 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="musikhuset">
+<html lang="en" data-theme="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musikloftet</title>
-    <link rel="stylesheet" href="tailwind.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Lora&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="tailwind2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300;400;500;600;700&family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300;400;500;600;700&family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="">
-    <!-- Nav bar -->
-    <header class="navbar text-neutral-content  bg-black swing-in-top-fwd sticky top-0 z-50">
-      <div class="navbar-start mx-2 px-2">
-        <!-- <img src="/src/imgs/logo_white_xs.svg" alt="logo" class="max-w-50%"> -->
-        <span class="text-4xl font-bold font-monotype"><a href="/src/index.html">MUSIKLOFTET</a></span>
+  <body>
+    <!-- Nav bar kid/logged in-->
+
+    <header
+      class="navbar text-neutral-content swing-in-top-fwd bg-green-1000 sticky top-0 z-50 h-16 gap-0 bg-opacity-60"
+    >
+      <div class="navbar-start ml-5 gap-5">
+        <img src="/src/imgs/SkoleMad_logo.png" alt="" class="h-8" />
+        <button
+          class="btn bg-button border-yellow gap-2 rounded-2xl border-2 text-sm text-white shadow-2xl"
+        >
+          Child
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
       </div>
-      <div class="navbar-end mx-2 hidden px-2 lg:flex">
-        <div class="flex items-stretch mx-3 ">
-          <a class="cursor-pointer btn btn-ghost  text-xl mx-3  link link-hover hover:text-primary" href="/src/index.html"> Om os </a>
-          <a class="cursor-pointer btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary  rounded-btn" href="/src/lokaler.html"> Lokaler </a>
-          <a class=" cursor-pointer btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn" href="/src/index.html#booking"> Book </a>
-          <a class="cursor-pointer btn btn-ghost  text-xl mx-3 link link-hover hover:text-primary rounded-btn" href="/src/faq.html"> FAQ </a>
-          <div class="dropdown dropdown-end">
-            <label tabindex="0" class="btn btn-primary text-ml rounded-btn">LOG IN</label>
-            <div tabindex="0" class="p-2 shadow menu dropdown-content rounded-box w-96 max-h-96 mt-4">
-              <div class="w-full min-h-screen bg-gray-100  sm:justify-center items-center pt-6 sm:pt-0">
-                <div class="w-full sm:max-w-md p-5 mx-auto ">
-                  <h2 class="mb-5 text-center text-2xl font-bold text-primary">SIGN IN</h2>
-                  <form>
-                    <div class="mb-4">
-                      <label class="block mb-1 text-primary" for="email">Email</label>
-                      <input id="email" type="text" name="email" class="py-2 px-3 border border-gray-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" />
-                    </div>
-                    <div class="mb-4">
-                      <label class="block mb-1 text-primary" for="password">Password</label>
-                      <input id="password" type="password" name="password" class="py-2 px-3 border border-gray-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" />
-                    </div>
-                    <div class="mt-6 flex items-center justify-between">
-                      <div class="flex items-center">
-                        <input id="remember_me" type="checkbox" class="border border-gray-300 text-blue-600 shadow-sm focus:border-accent focus:ring focus:ring-accent focus:ring-opacity-50" />
-                        <label for="remember_me" class="ml-2 block text-sm leading-5 text-gray-900"> Remember me </label>
-                      </div>
-                      <a href="#" class="text-sm text-red-600"> Forgot password? </a>
-                    </div>
-                    <div class="text-center mt-6">
-                      <input type="submit" name="signin" id="signin" value="Sign In" class="p-3 rounded-lg bg-primary outline-primary text-white shadow w-32 justify-center focus:bg-blue-900 hover:bg-blue-900">
-                    </div>  
-                    <div class="mt-1 text-primary text-center">
-                      <a href="#" class="underline">Sign up for an account</a>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+      <div class="navbar-center lex gap-10">
+        <a href="" class="text-sm font-bold text-black">UGENS MENU</a>
+        <a href="" class="text-sm font-bold text-black">BESTIL MAD</a>
+        <a href="" class="text-sm font-bold text-black">SKIFT PLAN</a>
+        <a href="" class="text-sm font-bold text-black">KONTOSALDO</a>
+        <a href="" class="text-sm font-bold text-black">INFO</a>
+      </div>
+      <div class="navbar-end">
+        <div class="mr-5 flex flex-col items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="bg-black"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+            />
+          </svg>
+          <a href="" class="text-sm font-bold text-black">MIN KONTO</a>
+          <p class="text-2xs text-green-900">750 DKK</p>
         </div>
       </div>
-      <!--NAV END-->
     </header>
 
-    <!-- MAIN START -->
-    <main>
-      <div class="grid grid-rows-5 ">
+    <!-- Nav bar kid/logged in -->
+    <div class="h-10"></div>
+    <!-- Nav bar first-->
 
-      <!-- Hero IMG -->
-      <section class=" cursor-s-resize 	heroimage max-w-50% max-h-screen bg-no-repeat fade-in ">
-        <!-- <img src="/src/imgs/274158411_4392117337555293_4768928660011175139_n.jpg" alt=""> -->
-        <h1 class="text-9xl text-white font-bold opacity-85 text-center mt-96 titlfont">MUSIKLOFTET</h1>
-        <a href="#sec1" title="a">
-        <img alt="" src="imgs/down-arrow.svg" class="mt-20 absolute ml-20 animate-bounce"></a>
-      </section>
-      
+    <header
+      class="navbar text-neutral-content swing-in-top-fwd sticky top-0 z-50 h-16 gap-0 bg-white bg-opacity-60"
+    >
+      <div class="navbar-start ml-5">
+        <img src="/src/imgs/SkoleMad_logo.png" alt="" class="h-8" />
+      </div>
+      <div class="navbar-center lex gap-10">
+        <a href="" class="text-sm font-bold text-black">FORELDRE</a>
+        <a href="" class="text-sm font-bold text-black">LEVERANDØR</a>
+        <a href="" class="text-sm font-bold text-black">MODTAGER</a>
+        <a href="" class="text-sm font-bold text-black">INFO</a>
+      </div>
+      <div class="navbar-end mr-5 gap-5">
+        <a href="" class="text-sm font-bold text-black">OPRET KONTO</a>
 
-      <!-- OM OS -->
-      <section class="grid grid-cols-2 mx-32 mt-20 mb-24" id="sec1">
-        <div class="w-28 h-auto pt-8 ml-20">
-          <img src="imgs/om_os.svg" alt="Om os" class="">
-        </div>
-        <div class="bodyfont font-extrabold mt-20 text-xl ">
-          <p>Musikloftet er 8 hyggelige øvelokaler på toppen af Prøvestenen i København. Øvelokalerne ligger i en gammel industribygning, som huser både kreative værksteder, atelierer og fotostudier. 
-          Øvelokalerne blev etableret i 2018 med den tanke at det skal være let at finde og dele et øvelokale.
-          </p> <br>
-          <p> De fleste bands øver kun én gang om ugen, så Musikloftets mål er at gøre det let at dele sit øvelokale med andre: <br>  Vi har udelukkende baggearslokaler udstyret med alt det tunge/besværlige udstyr: Trommer, forstærkere og PA-anlæg. Så som band/orkester gælder det bare om at tage guitaren eller bassen over skulderen, og komme fast én dag om ugen. 
-          </p> 
-          <p><br> God spillelyst!</p>
-        </div>
-      </section> 
-
-      <!-- BLUE IMG -->
-      <section>
-        <div>
-          <img src="imgs/blue7.jpg" alt="Image">
-        </div>
-      </section>
-
-      <!-- LOKALER -->
-      <section class="grid grid-cols-2 mx-32  mb-20 ">
-        <div class="prose mt-5 text-xl bodyfont ">
-          <p>Musikloftet har otte øvelokaler på øverste etage af en gammel industribygning på Prøvestenen i København.  
-            Vi tilbyder tre typer lokaler, som alle er baggearslokaler:
-          </p> 
-          <p> <strong> Ét lille lokale på 10m2, fire mellem lokaler (16-22 m2) og tre store lokaler (33-36m2)</strong></p>
-          <p> Dertil er der fælles toilet på gangen og et lille fælleskøkken med tagterasse, hvor man kan nyde et glas om sommeren.
-          </p>
-          <P>Lokalerne lejes for et tidsrum på tre timer én dag om ugen - nok til en god øver. Alle lokalerne er godt støjdæmpede, og er udstyret med det nødvendige for at spille. <br>  <br> Læs mere om vores udstyr og lokaler.
-          </p>
-          <button class="cursor-pointer btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary mt-14 ml-40 ">
-            <a href="/src/lokaler.html" class="titlefont">LÆS MERE</a>
-          </button>
-        </div>
-        <div class="w-20 h-auto ml-80">
-          <img src="imgs/lokaler_ny.svg" alt="Om os" class="">
-        </div>
-      </section>
-
-      <!-- QUOTE CAROUSEL -->
-      <section>
-        <div class="w-screen carousel titlefont">
-          <div id="slide1" class="relative w-screen carousel-item">
-            <div class="yellowquote w-screen  flex flex-grow flex-row items-center justify-items-center bg-no-repeat">
-              <div  class=" text-white text-6xl h-auto w-1/2 ml-40">"Musikloftet giver os nogle fed rammer til både at øve os og giver vores band et samlingspunkt"<br><span class="text-black text-2xl">- Sebastian, 25 år</span></div>
-            </div>
-            <div class="absolute flex  justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" class="btn btn-circle">❮</a> 
-              <a href="#slide2" class="btn btn-circle">❯</a>
-            </div>
-          </div> 
-          <div id="slide2" class="relative w-screen carousel-item">
-            <div class="bluequote flex w-screen flex-grow flex-row items-center justify-items-center bg-no-repeat">
-              <div  class=" text-white text-6xl h-auto w-1/4 ml-40">“Det er nice man kan booke lokalerne i perioder hvor vi har mere brug for at øve end andre” <br><span class="text-black text-2xl">- Johanne, 28 år</span></div>
-            </div>
-            <div class="absolute flex justify-between  transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" class="btn btn-circle">❮</a> 
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide3" class="relative w-screen carousel-item">
-            <div class="thirdquote w-screen flex flex-grow flex-row items-center justify-items-center bg-no-repeat">
-              <div  class=" text-white text-6xl h-auto w-1/2 ml-40">“Udover lokalet vi lejer er tagteressen også rigtig nice, og en fed mulighed for at møde andre musikere.” <br><span class="text-black text-2xl">- Hugo, 22 år</span></div>
-            </div>
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" class="btn btn-circle">❮</a> 
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
-          </div> 
-        </div>
-      </section> 
-    
-
-   
-      <section class=" mb-32" id="booking">
-        <div class="text-center">
-          <h1 class="text-6xl titlefont font-bold ">Booking</h1>
-        </div>
-        <div class="border-b-2 border-black h-4 ml-40 mr-40"></div>
-        <div class="text-center mx-80 my-14 text-xl bodyfont">
-          <p>Musikloftet har 8 hyggelige øvelokaler på øverste etage af en gammel industribygning på Prøvestenen i København. 
-
-            Vores priser ligger på hhv. <strong>300kr</strong> (lille) , <strong>500kr</strong> (mellem) og <strong>800kr</strong> (stor) pr. rum pr. måned.  
-            <br> <br>For at læse mere om hvad de forskellige rum indeholder, følg knappen. 
-          </p>
-          <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-outline btn-primary mt-14">
-            <a href="/src/lokaler.html" class="titlefont">LÆS MERE</a>
-          </button>
-        </div>
-        
-        <div class="flex flex-row items-center justify-items-center">
-          <div class="ml-36 flex-auto">
-            <img class="" src="imgs/plantegning.svg" alt="" />
-          </div>
-          <div class="grid flex-auto grid-cols-1 gap-3">
-            <button
-              id="small-button"
-              class="cursor-pointer btn btn-circle k translate:110 h-20 w-20 border-none bg-white text-black shadow-xl outline outline-black hover:scale-110 hover:bg-black hover:text-white hover:outline-black"
+        <div class="dropdown dropdown-end">
+          <label
+            tabindex="0"
+            class="btn gap-2 rounded-2xl border-yellow-200 bg-green-600 text-sm text-black shadow-2xl"
+            >LOG IND</label
+          >
+          <div
+            tabindex="0"
+            class="menu dropdown-content rounded-box mt-4 max-h-96 w-96 p-2 shadow"
+          >
+            <div
+              class="min-h-screen w-full items-center bg-green-600 bg-opacity-60 pt-6 sm:justify-center sm:pt-0"
             >
-              Lille
+              <div class="mx-auto w-full p-5 sm:max-w-md">
+                <h2 class="mb-5 text-center text-2xl font-bold text-black">
+                  LOG IND
+                </h2>
+                <form>
+                  <div class="mb-4">
+                    <label class="mb-1 block text-black" for="email"
+                      >Email</label
+                    >
+                    <input
+                      id="email"
+                      type="text"
+                      name="email"
+                      class="mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 disabled:bg-gray-100"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label class="mb-1 block text-black" for="password"
+                      >Password</label
+                    >
+                    <input
+                      id="password"
+                      type="password"
+                      name="password"
+                      class="mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 disabled:bg-gray-100"
+                    />
+                  </div>
+                  <div class="mt-6 flex items-center justify-between">
+                    <div class="flex items-center">
+                      <input
+                        id="remember_me"
+                        type="checkbox"
+                        class="focus:border-accent focus:ring-accent border border-gray-300 text-blue-600 shadow-sm focus:ring focus:ring-opacity-50"
+                      />
+                      <label
+                        for="remember_me"
+                        class="ml-2 block text-sm leading-5 text-gray-900"
+                      >
+                        Remember me
+                      </label>
+                    </div>
+                    <a href="#" class="text-sm text-red-600">
+                      Forgot password?
+                    </a>
+                  </div>
+                  <div class="mt-6 text-center">
+                    <input
+                      type="submit"
+                      name="signin"
+                      id="signin"
+                      value="LOG IND"
+                      class="btn gap-2 rounded-2xl border-yellow-200 bg-green-600 text-sm text-black shadow-2xl"
+                    />
+                  </div>
+                  <div class="text-primary mt-1 text-center"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Nav bar first -->
+    <div class="h-10"></div>
+    <!--leverandør-->
+
+    <header
+      class="navbar text-neutral-content swing-in-top-fwd bg-blue sticky top-0 z-50 h-16 gap-0 bg-opacity-60"
+    >
+      <div class="navbar-start ml-5 gap-5">
+        <img src="/src/imgs/SkoleMad_logo.png" alt="" class="h-8" />
+      </div>
+      <div class="navbar-center lex gap-10">
+        <a href="" class="text-sm font-bold text-black">KUNDER</a>
+        <a href="" class="text-sm font-bold text-black">BESTILINGER</a>
+        <a href="" class="text-sm font-bold text-black">INFO</a>
+      </div>
+      <div class="navbar-end">
+        <div class="mr-5 flex flex-col items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="bg-black"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+            />
+          </svg>
+          <a href="" class="text-sm font-bold text-black">MIN KONTO</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- leverandør -->
+    <div class="h-10"></div>
+    <!--modtager-->
+
+    <header
+      class="navbar text-neutral-content swing-in-top-fwd bg-red sticky top-0 z-50 h-16 gap-0 bg-opacity-60"
+    >
+      <div class="navbar-start ml-5 gap-5">
+        <img src="/src/imgs/SkoleMad_logo.png" alt="" class="h-8" />
+      </div>
+      <div class="navbar-center lex gap-10">
+        <a href="" class="text-sm font-bold text-white">AFTALER</a>
+        <a href="" class="text-sm font-bold text-white">BESTILINGER</a>
+        <a href="" class="text-sm font-bold text-white">INFO</a>
+      </div>
+      <div class="navbar-end">
+        <div class="mr-5 flex flex-col items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="bg-black"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+            />
+          </svg>
+          <a href="" class="text-sm font-bold text-black">MIN KONTO</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- modtager -->
+    <div class="h-10"></div>
+
+    <!-- footer foreldre -->
+    <footer
+      class="bg-green flex h-96 flex-row items-start justify-center gap-52 bg-opacity-60 pt-20"
+    >
+      <div class="flex flex-row gap-20">
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Skift over til:</h2>
+
+          <p class="ml-4 text-sm">Forældre</p>
+          <p class="ml-4 text-sm">Modtager</p>
+          <p class="ml-4 text-sm">Leverandør</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Om skolemad:</h2>
+          <p class="ml-4 text-sm">Om skolemad</p>
+          <p class="ml-4 text-sm">FAQ</p>
+          <p class="ml-4 text-sm">Kontakt</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Generelt:</h2>
+          <p class="ml-4 text-sm">Vilkår</p>
+          <p class="ml-4 text-sm">Privatspolitik</p>
+          <p class="ml-4 text-sm">Glemt kode</p>
+        </div>
+      </div>
+      <div>
+        <div class="w-64">
+          <h2 class="text-2xl font-bold text-black">
+            Vil du holde dig opdateret?
+          </h2>
+          <p class="text-ml mb-6 font-bold text-black">
+            Tilmeld dig nyhesbrevet her:
+          </p>
+          <div class="mb-10 border-b-2 border-black py-2">
+            <p class="text-xs text-black">Indsæt din email</p>
+          </div>
+        </div>
+        <img src="/src/imgs/SkoleMad_logo.png" alt="" class="h-14" />
+      </div>
+    </footer>
+
+    <!-- footer foreldre-->
+    <div class="h-10"></div>
+
+    <!-- footer leverandør -->
+    <footer
+      class="bg-blue flex h-96 flex-row items-start justify-center gap-52 bg-opacity-60 pt-20"
+    >
+      <div class="flex flex-row gap-20">
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Skift over til:</h2>
+
+          <p class="ml-4 text-sm">Forældre</p>
+          <p class="ml-4 text-sm">Modtager</p>
+          <p class="ml-4 text-sm">Leverandør</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Om skolemad:</h2>
+          <p class="ml-4 text-sm">Om skolemad</p>
+          <p class="ml-4 text-sm">FAQ</p>
+          <p class="ml-4 text-sm">Kontakt</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Generelt:</h2>
+          <p class="ml-4 text-sm">Vilkår</p>
+          <p class="ml-4 text-sm">Privatspolitik</p>
+          <p class="ml-4 text-sm">Glemt kode</p>
+        </div>
+      </div>
+      <div>
+        <div class="w-64">
+          <h2 class="text-2xl font-bold text-black">
+            Vil du holde dig opdateret?
+          </h2>
+          <p class="text-ml mb-6 font-bold text-black">
+            Tilmeld dig nyhesbrevet her:
+          </p>
+          <div class="mb-10 border-b-2 border-black py-2">
+            <p class="text-xs text-black">Indsæt din email</p>
+          </div>
+        </div>
+        <img src="/src/imgs/SkoleMad_logo.png" alt="" class="h-14" />
+      </div>
+    </footer>
+
+    <!-- footer leverandør-->
+    <div class="h-10"></div>
+
+    <!-- footer modtager -->
+    <footer
+      class="bg-pink flex h-96 flex-row items-start justify-center gap-52 bg-opacity-60 pt-20"
+    >
+      <div class="flex flex-row gap-20">
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Skift over til:</h2>
+
+          <p class="ml-4 text-sm">Forældre</p>
+          <p class="ml-4 text-sm">Modtager</p>
+          <p class="ml-4 text-sm">Leverandør</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Om skolemad:</h2>
+          <p class="ml-4 text-sm">Om skolemad</p>
+          <p class="ml-4 text-sm">FAQ</p>
+          <p class="ml-4 text-sm">Kontakt</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Generelt:</h2>
+          <p class="ml-4 text-sm">Vilkår</p>
+          <p class="ml-4 text-sm">Privatspolitik</p>
+          <p class="ml-4 text-sm">Glemt kode</p>
+        </div>
+      </div>
+      <div>
+        <div class="w-64">
+          <h2 class="text-2xl font-bold text-black">
+            Vil du holde dig opdateret?
+          </h2>
+          <p class="text-ml mb-6 font-bold text-black">
+            Tilmeld dig nyhesbrevet her:
+          </p>
+          <div class="mb-10 border-b-2 border-black py-2">
+            <p class="text-xs text-black">Indsæt din email</p>
+          </div>
+        </div>
+        <img src="/src/imgs/SkoleMad_logo.png" alt="" class="h-14" />
+      </div>
+    </footer>
+
+    <!-- footer modtager-->
+
+    <div class="h-10"></div>
+
+    <!-- footer neutral -->
+    <footer
+      class="flex h-96 flex-row items-start justify-center gap-52 bg-opacity-60 pt-20"
+    >
+      <div class="flex flex-row gap-20">
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Skift over til:</h2>
+
+          <p class="ml-4 text-sm">Forældre</p>
+          <p class="ml-4 text-sm">Modtager</p>
+          <p class="ml-4 text-sm">Leverandør</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Om skolemad:</h2>
+          <p class="ml-4 text-sm">Om skolemad</p>
+          <p class="ml-4 text-sm">FAQ</p>
+          <p class="ml-4 text-sm">Kontakt</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="text-lg font-bold text-black">Generelt:</h2>
+          <p class="ml-4 text-sm">Vilkår</p>
+          <p class="ml-4 text-sm">Privatspolitik</p>
+          <p class="ml-4 text-sm">Glemt kode</p>
+        </div>
+      </div>
+      <div>
+        <div class="w-64">
+          <h2 class="text-2xl font-bold text-black">
+            Vil du holde dig opdateret?
+          </h2>
+          <p class="text-ml mb-6 font-bold text-black">
+            Tilmeld dig nyhesbrevet her:
+          </p>
+          <div class="mb-10 border-b-2 border-black py-2">
+            <p class="text-xs text-black">Indsæt din email</p>
+          </div>
+        </div>
+        <img src="/src/imgs/SkoleMad_logo.png" alt="" class="h-14" />
+      </div>
+    </footer>
+
+    <!-- footer neutral-->
+
+    <div class="h-10"></div>
+
+    <!-- main booking food -->
+
+    <main class="ml-10 mr-10 mt-20 mb-20 flex flex-row items-start gap-16">
+      <div class="flex w-96 flex-col items-center justify-center">
+        <img src="imgs/ripping_food.png" alt="" class="mb-10" />
+        <h2 class="mb-5 text-xl font-bold text-black">Madskolen SMAG</h2>
+        <p class="text-ml ml-5 text-left leading-8 text-black">
+          Madskolen på Kalvebod Fælled Skole er et produktionskøkken, der skal
+          være en integreret del af hverdagen og skolens sundhedsprofil. Der vil
+          blive fremstillet mad med fokus på maddannelse, sundhed og økologi.<br /><br />
+          Målet er at gøre eleverne nysgerrige og modige på at smage nye råvare,
+          samt sunde kostvaner. Madskolen skal understøtte elevernes lyst og
+          madglæde og lære dem de vaner, der skal til for at kunne træffe sunde
+          valg. og ikke mindst give eleverne energi til skoledagen.
+        </p>
+      </div>
+      <div class="w-96 overflow-auto rounded-xl border-2 border-black">
+        <div
+          class="bg-green flex h-14 w-auto items-center justify-center rounded-t-xl"
+        >
+          <h2 class="text-2xl font-bold text-black">MENU</h2>
+        </div>
+        <div class="mt-8 mb-4 flex w-auto flex-col items-center justify-center">
+          <div class="flex items-center">
+            <h3 class="text-ml font-bold text-black">UGE 15</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down ml-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+          <div class="mt-2 mb-4 w-56 border-b-2 border-black"></div>
+        </div>
+        <div class="mt-4 mb-4 flex w-auto flex-col items-center justify-center">
+          <h4 class="mb-2 text-sm font-bold text-black">Mandag - 21.03</h4>
+          <p class="text-grey text-left text-xs italic text-inherit opacity-50">
+            Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+          </p>
+          <div class="mt-5 w-24 border-b-2"></div>
+        </div>
+        <div class="mt-4 mb-4 flex w-auto flex-col items-center justify-center">
+          <h4 class="mb-2 text-sm font-bold text-black">Tirsdag - 22.03</h4>
+          <p class="text-grey text-left text-xs italic text-inherit opacity-50">
+            Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+          </p>
+          <div class="mt-5 w-24 border-b-2"></div>
+        </div>
+        <div class="mt-4 mb-4 flex w-auto flex-col items-center justify-center">
+          <h4 class="mb-2 text-sm font-bold text-black">Onsdag - 23.03</h4>
+          <p class="text-grey text-left text-xs italic text-inherit opacity-50">
+            Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+          </p>
+          <div class="mt-5 w-24 border-b-2"></div>
+        </div>
+        <div class="mt-4 mb-4 flex w-auto flex-col items-center justify-center">
+          <h4 class="mb-2 text-sm font-bold text-black">Torsdag - 24.03</h4>
+          <p class="text-grey text-left text-xs italic text-inherit opacity-50">
+            Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+          </p>
+          <div class="mt-5 w-24 border-b-2"></div>
+        </div>
+        <div
+          class="mt-4 mb-10 flex w-auto flex-col items-center justify-center"
+        >
+          <h4 class="mb-2 text-sm font-bold text-black">Fredag - 25.03</h4>
+          <p class="text-grey text-left text-xs italic text-inherit opacity-50">
+            Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex w-80 items-center justify-center rounded-xl border-2 border-black"
+      >
+        <div class="mt-5 flex w-auto flex-col items-center justify-center">
+          <div class="flex w-60 flex-row justify-between">
+            <h3 class="text-ml font-bold text-black">Ordre info</h3>
+            <div class="flex items-center">
+              <h3 class="text-ml font-bold text-black">Marts</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down ml-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="mt-2 mb-4 w-60 border-b-2 border-black"></div>
+          <div class="mt-4 flex w-60 justify-between">
+            <p class="text-sm font-bold text-black">Rada</p>
+            <div class="flex flex-row items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+              </svg>
+              <p class="text-sm text-black">Vegetar</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+              </svg>
+              <p class="text-sm font-bold text-black">300 DKK</p>
+            </div>
+          </div>
+          <div class="mt-6 flex w-60 justify-between">
+            <p class="text-sm font-bold text-black">Vera</p>
+            <div class="flex flex-row items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-check-circle rounded-xl bg-green-200"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                />
+              </svg>
+              <p class="text-sm text-black">Vegetar</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-check-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                />
+              </svg>
+              <p class="text-sm font-bold text-black">300 DKK</p>
+            </div>
+          </div>
+          <div class="mt-12 w-52">
+            <div class="flex justify-between">
+              <p class="text-xs font-bold text-black">Kontosaldo</p>
+              <p class="text-xs text-black">750</p>
+            </div>
+            <div class="mt-2 flex justify-between">
+              <p class="text-xs font-bold text-black">Nuværende ordre</p>
+              <p class="text-xs text-black">300</p>
+            </div>
+            <div class="mt-2 border-b-2 border-black"></div>
+            <div class="mt-2 flex justify-between">
+              <p class="text-xs font-bold text-black">Udgående balance</p>
+              <p class="text-xs text-black">+ 450DK</p>
+            </div>
+          </div>
+          <div class="mt-8 mb-8 flex w-60 justify-evenly">
+            <button
+              class="btn w-28 gap-2 rounded-2xl border-yellow-200 bg-green-800 text-sm text-black shadow-2xl"
+            >
+              TANK OP
             </button>
             <button
-              id="medium-button"
-              class="cursor-pointer btn btn-circle hover:bg-accent hover:outline-accent outline-accent hover:text-blackshadow-lg h-20 w-20 border-none bg-white text-black shadow-xl outline transition-transform hover:scale-110"
+              class="btn w-28 gap-2 rounded-2xl border-yellow-200 bg-green-600 text-sm text-black shadow-2xl"
             >
-              mellem
+              BESTIL
             </button>
-            <button
-              id="large-button"
-              class="cursor-pointer btn btn-circle hover:bg-primary-focus hover:outline-primary-focus outline-primary-focus h-20 w-20 border-none bg-white text-black shadow-xl outline transition-transform hover:scale-110 hover:text-white"
-            >
-              stor
-            </button>
-          </div>
-          
-          <div class="flex-auto">
-            <img
-              class="shadow-xl"
-              id="calendar"
-              alt=""
-              src="imgs/Calendar empty.svg"
-            />
-            <img
-              id="calendars"
-              alt=""
-              class="hidden shadow-xl fade-in"
-              src="imgs/Calendar Small Room.svg"
-            />
-            <img
-              id="calendarm"
-              alt=""
-              class="hidden shadow-xl fade-in"
-              src="imgs/Calendar Medium Room.svg"
-            />
-            <img
-              id="calendarl"
-              alt=""
-              class="hidden shadow-xl fade-in"
-              src="imgs/Calendar Large Room.svg"
-            />
           </div>
         </div>
-      </section>
-    </div>
-    <div class="grid grid-rows-1">
-      <!-- QUOTE BLUE -->
-      <section class="bluequote3 max-w-50% flex flex-row items-center justify-items-center">
-        
-        <div  class=" text text-6xl h-auto w-1/4 ml-40 opacity-0 ">"Musikloftet giver os nogle fed rammer til både at øve os og giver vores band et samlingspunkt"<br><span class="text-black text-2xl">- Sebastian, 25 år</span></div>
-     </section>
-    </div>
+      </div>
     </main>
 
-    <!--Footer start-->
-   <footer class="p-20 footer bg-black titlefont">
-      <div class="m-10 text-2xl space-y-6 text-white">
-        <a class="link link-hover hover:text-primary" href="/src/index.html">OM OS</a> 
-        <a class="link link-hover hover:text-accent" href="/src/lokaler.html">LOKALER</a> 
-        <a class="link link-hover hover:text-accent" href="/src/faq.html">FAQ</a> 
-        <div class="dropdown dropdown-top">
-          <label tabindex="0" class="m-1 link link-hover hover:text-accent ">KONTAKT</label>
-          <div tabindex="0" class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-96">
-            <div class="w-full sm:max-w-md p-5 mx-auto">
-              <button class="bg-primary hover:bg-blue-900 text-white py-2 px-4 rounded-full justify-start">
-                X
-              </button>
-              <h2 class="mb-5 text-center text-2xl font-bold text-blue-700">KONTAKT OS</h2>
-              <form>
-                <div class="mb-4">
-                  <label class="block mb-1 text-black" for="email">Email</label>
-                  <input id="email" type="text" name="email" class="py-2 px-3 border border-gray-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" />
-                </div>
-                <div class="mb-4">
-                  <label class="block mb-1 text-black " for="password">Skriv os besked...</label>
-                  <input id="besked" type="besked" name="besked" class="py-5 px-5 border border-gray-300 focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 rounded-md shadow-sm disabled:bg-gray-100 mt-1 block w-full" />
-                </div>
-                <div class="text-center mt-6">
-                  <input type="submit" name="send" id="send" value="SEND" class="p-3 rounded-lg bg-primary outline-none text-white shadow w-32 justify-center focus:bg-blue-900 hover:bg-blue-900">
-              </form>
+    <!-- main booking food -->
+    <div class="h-10"></div>
+
+    <!-- main menu overview -->
+
+    <main
+      class="ml-10 mr-10 mt-20 mb-20 flex flex-row items-start justify-center gap-16"
+    >
+      <div class="flex w-96">
+        <img src="/src/imgs/tomatoes.png" alt="" class="mt-96 w-auto" />
+      </div>
+      <div class="w-96 overflow-auto rounded-xl border-2 border-black">
+        <div
+          class="bg-green flex h-14 w-auto items-center justify-center rounded-t-xl"
+        >
+          <h2 class="text-2xl font-bold text-black">MENU</h2>
+        </div>
+        <div class="mt-8 mb-4 flex w-auto flex-col items-center justify-center">
+          <div class="flex items-center">
+            <h3 class="text-ml font-bold text-black">UGE 15</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down ml-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+          <div class="mt-2 mb-4 w-56 border-b-2 border-black"></div>
+        </div>
+        <div class="mt-4 mb-4 flex w-auto flex-col items-center justify-center">
+          <h4 class="mb-2 text-sm font-bold text-black">Mandag - 21.03</h4>
+          <p class="text-grey text-left text-xs italic text-inherit opacity-50">
+            Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+          </p>
+          <div class="mt-5 w-24 border-b-2"></div>
+        </div>
+        <div class="mt-4 mb-4 flex w-auto flex-col items-center justify-center">
+          <h4 class="mb-2 text-sm font-bold text-black">Tirsdag - 22.03</h4>
+          <p class="text-grey text-left text-xs italic text-inherit opacity-50">
+            Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+          </p>
+          <div class="mt-5 w-24 border-b-2"></div>
+        </div>
+        <div class="mt-4 mb-4 flex w-auto flex-col items-center justify-center">
+          <h4 class="mb-2 text-sm font-bold text-black">Onsdag - 23.03</h4>
+          <p class="text-grey text-left text-xs italic text-inherit opacity-50">
+            Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+          </p>
+          <div class="mt-5 w-24 border-b-2"></div>
+        </div>
+        <div class="mt-4 mb-4 flex w-auto flex-col items-center justify-center">
+          <h4 class="mb-2 text-sm font-bold text-black">Torsdag - 24.03</h4>
+          <p class="text-grey text-left text-xs italic text-inherit opacity-50">
+            Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+          </p>
+          <div class="mt-5 w-24 border-b-2"></div>
+        </div>
+        <div
+          class="mt-4 mb-10 flex w-auto flex-col items-center justify-center"
+        >
+          <h4 class="mb-2 text-sm font-bold text-black">Fredag - 25.03</h4>
+          <p class="text-grey text-left text-xs italic text-inherit opacity-50">
+            Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+          </p>
+        </div>
+      </div>
+      <div class="flex w-96 justify-end">
+        <img src="/src/imgs/ripping_food.png" alt="" class="h-auto w-auto" />
+      </div>
+    </main>
+
+    <!-- main menu overview -->
+
+    <div class="h-10"></div>
+
+    <!-- contact us -->
+    <main
+      class="contact-bg max-w-screen flex h-screen items-center justify-center bg-cover"
+    >
+      <div
+        class="mt-10 flex h-auto w-96 flex-col items-center justify-center rounded-xl bg-white bg-opacity-90 pr-10 pl-10"
+      >
+        <h1 class="mt-10 mb-8 text-2xl font-bold text-black">Kontakt os</h1>
+        <div class="flex w-80 flex-col">
+          <h3 class="text-ml text-black">Navn, efternavn</h3>
+          <div class="w-80 border-b-2 border-black"></div>
+        </div>
+        <div class="mt-4 mb-6 flex w-80 flex-col">
+          <h3 class="text-ml text-black">E-mail</h3>
+          <div class="w-80 border-b-2 border-black"></div>
+        </div>
+        <div class="h-40 w-80 rounded-xl border-2 border-black">
+          <h3 class="text-ml mt-4 ml-4 text-black">Skriv os besked..</h3>
+        </div>
+        <button
+          class="btn mt-6 mb-6 gap-2 rounded-2xl border-yellow-200 bg-green-600 text-sm text-black shadow-2xl"
+        >
+          SEND
+        </button>
+      </div>
+    </main>
+
+    <!-- contact us -->
+
+    <div class="h-10"></div>
+
+    <!-- Madskolen SMAG -->
+
+    <main class="flex h-auto w-auto items-center justify-evenly">
+      <div class="mt-20 mb-20 flex w-1/3 flex-col gap-10">
+        <h1 class="text-2xl font-bold text-black">Madskolen SMAG</h1>
+        <p class="text-sm leading-8 text-black">
+          Madskolen på Kalvebod Fælled Skole er et produktionskøkken, der skal
+          være en integreret del af hverdagen og skolens sundhedsprofil. Der vil
+          blive fremstillet mad med fokus på maddannelse, sundhed og økologi.
+          Målet er at gøre eleverne nysgerrige og modige på at smage nye råvare,
+          samt sunde kostvaner. Madskolen skal understøtte elevernes lyst og
+          madglæde og lære dem de vaner, der skal til for at kunne træffe sunde
+          valg. og ikke mindst give eleverne energi til skoledagen.
+        </p>
+        <h2 class="text-lg font-bold text-black">Kultur og fællesskab</h2>
+        <p class="text-sm leading-8 text-black">
+          Vi vil på Kalvebod Fælled Skole stræbe mod en madskole, hvor der
+          skabes et fællesskab om maden. Det er her alle mødes, med en god og
+          hyggelig stemning omkring spisningen. Eleverne vil opleve en
+          genkendelighed, hvor man som derhjemme også holder bordstik, smager på
+          maden og snakker om hvad man spiser, her på skolen. Hele klassen
+          spiser sammen også dem med madpakker hjemmefra. Lærer og pædagoger
+          spiser sammen med eleverne som et led i arbejdet med deres maddannelse
+          og det at skabe en god måltidskultur.
+          <br />
+          <br />
+          I kan følge med i vores hverdag på vores instagram konto
+          madskolen_kalvebodfaelled Vh Team SMAG
+        </p>
+      </div>
+      <div class="flex w-1/3 flex-col gap-10">
+        <img src="/src/imgs/tomatoes.png" alt="" />
+        <img src="/src/imgs/ripping_food.png" alt="" />
+        <img src="/src/imgs/tomatoes2.png" alt="" />
+      </div>
+    </main>
+
+    <!-- Madskolen SMAG  -->
+
+    <div class="h-10"></div>
+
+    <!-- Kotoudtog -->
+    <main class="max-w-screen flex h-auto items-center justify-evenly">
+      <div class="ml-20 mt-32 mb-32 flex w-2/3 flex-col">
+        <h1 class="mb-6 text-4xl font-bold text-black">Kontoudtog</h1>
+        <div class="flex gap-6">
+          <button
+            class="btn w-auto w-32 gap-2 rounded-2xl border-none bg-green-200 text-sm text-black"
+          >
+            Fra
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down ml-5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+          <button
+            class="btn w-auto w-32 w-auto gap-2 rounded-2xl border-none bg-green-200 text-sm text-black"
+          >
+            Til
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down ml-5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+          <button
+            class="btn w-auto w-32 gap-2 rounded-2xl border-none bg-green-200 text-sm text-black"
+          >
+            Børn
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down ml-5"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+          <button
+            class="btn w-auto w-28 gap-2 rounded-2xl border-yellow-200 bg-green-600 text-sm text-black shadow-2xl"
+          >
+            GEM
+          </button>
+        </div>
+        <div class="mt-8 h-auto max-w-fit rounded-xl border-2 border-black">
+          <table>
+            <thead>
+              <tr class="h-16">
+                <th
+                  class="text-ml w-28 justify-center border-r-2 border-black px-4 text-left"
+                >
+                  Dato
+                </th>
+                <th class="text-ml w-96 border-r-2 border-black px-4 text-left">
+                  Mål
+                </th>
+                <th class="text-ml w-24 border-r-2 border-black">Beløb</th>
+                <th class="text-ml w-24 border-black">Saldo</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="h-12">
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-bold text-black"
+                >
+                  02-02-2022
+                </td>
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-normal text-black"
+                >
+                  Indbetaling Dankort
+                </td>
+                <td
+                  class="border-t-2 border-r-2 border-black text-center text-xs font-bold text-black"
+                >
+                  500 dkk
+                </td>
+                <td
+                  class="border-t-2 border-black text-center text-xs font-bold text-black"
+                >
+                  700 dkk
+                </td>
+              </tr>
+              <tr class="h-12 bg-slate-200">
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-bold text-black"
+                >
+                  15-02-2022
+                </td>
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-normal text-black"
+                >
+                  Vera Februar
+                </td>
+                <td
+                  class="border-t-2 border-r-2 border-black text-center text-xs font-bold text-black"
+                >
+                  300 dkk
+                </td>
+                <td
+                  class="border-t-2 border-black text-center text-xs font-bold text-black"
+                >
+                  400 dkk
+                </td>
+              </tr>
+              <tr class="h-12">
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-bold text-black"
+                >
+                  24-02-2022
+                </td>
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-normal text-black"
+                >
+                  Rada Februar
+                </td>
+                <td
+                  class="border-t-2 border-r-2 border-black text-center text-xs font-bold text-black"
+                >
+                  300 dkk
+                </td>
+                <td
+                  class="border-t-2 border-black text-center text-xs font-bold text-black"
+                >
+                  100 dkk
+                </td>
+              </tr>
+              <tr class="h-12 bg-slate-200">
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-bold text-black"
+                >
+                  04-03-2022
+                </td>
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-normal text-black"
+                >
+                  Inbetaling Mastercard
+                </td>
+                <td
+                  class="border-t-2 border-r-2 border-black text-center text-xs font-bold text-black"
+                >
+                  600 dkk
+                </td>
+                <td
+                  class="border-t-2 border-black text-center text-xs font-bold text-black"
+                >
+                  700 dkk
+                </td>
+              </tr>
+              <tr class="h-12">
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-bold text-black"
+                >
+                  04-03-2022
+                </td>
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-normal text-black"
+                >
+                  Vera & Rada Marts
+                </td>
+                <td
+                  class="border-t-2 border-r-2 border-black text-center text-xs font-bold text-black"
+                >
+                  600 dkk
+                </td>
+                <td
+                  class="border-t-2 border-black text-center text-xs font-bold text-black"
+                >
+                  100 dkk
+                </td>
+              </tr>
+              <tr class="h-12 bg-slate-200">
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-bold text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-normal text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-r-2 border-black text-center text-xs font-bold text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-black text-center text-xs font-bold text-black"
+                ></td>
+              </tr>
+              <tr class="h-12">
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-bold text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-normal text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-r-2 border-black text-center text-xs font-bold text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-black text-center text-xs font-bold text-black"
+                ></td>
+              </tr>
+              <tr class="h-12 bg-slate-200">
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-bold text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-normal text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-r-2 border-black text-center text-xs font-bold text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-black text-center text-xs font-bold text-black"
+                ></td>
+              </tr>
+              <tr class="h-12">
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-bold text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-r-2 border-black px-4 text-xs font-normal text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-r-2 border-black text-center text-xs font-bold text-black"
+                ></td>
+                <td
+                  class="border-t-2 border-black text-center text-xs font-bold text-black"
+                ></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="mr-10 h-auto w-1/3">
+        <img src="/src/imgs/tomatoes2.png" alt="" />
+      </div>
+    </main>
+
+    <!-- Kontoudtog  -->
+
+    <div class="h-10"></div>
+
+    <!-- Kotoudtog -->
+
+    <main
+      class="max-w-screen flex h-auto min-h-screen items-center justify-evenly"
+    >
+      <div class="flex h-auto w-1/3 flex-col">
+        <h1 class="mb-8 text-3xl font-bold text-black">OPRET KONTO</h1>
+        <div
+          class="flex h-10 w-auto items-center justify-start rounded-xl bg-green-200"
+        >
+          <h3 class="text-ml ml-4">Navn og efternavn...</h3>
+        </div>
+        <div
+          class="mt-2 flex h-10 w-auto items-center justify-between rounded-xl bg-green-200"
+        >
+          <h3 class="text-ml ml-4">Skole...</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down mr-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </div>
+        <div class="mt-2 flex h-10 w-auto items-center justify-between">
+          <div
+            class="flex h-10 w-52 items-center justify-between rounded-xl bg-green-200"
+          >
+            <h3 class="text-ml ml-4">Klassetrin...</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down mr-4"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+          <div
+            class="flex h-10 w-52 items-center justify-between rounded-xl bg-green-200"
+          >
+            <h3 class="text-ml ml-4">Bogstav...</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down mr-4"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="mt-2 flex h-10 w-auto items-center justify-between rounded-xl bg-green-200"
+        >
+          <h3 class="text-ml ml-4">Mobilnummer...</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down mr-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </div>
+        <div
+          class="mt-2 flex h-10 w-auto items-center justify-between rounded-xl bg-green-200"
+        >
+          <h3 class="text-ml ml-4">E-mail...</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down mr-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </div>
+        <div
+          class="mt-2 flex h-10 w-auto items-center justify-between rounded-xl bg-green-200"
+        >
+          <h3 class="text-ml ml-4">Kodeord...</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down mr-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </div>
+        <div
+          class="mt-2 flex h-10 w-auto items-center justify-between rounded-xl bg-green-200"
+        >
+          <h3 class="text-ml ml-4">Bekræft kodeord...</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down mr-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </div>
+        <div class="mt-2 flex h-10 items-center justify-evenly">
+          <h3 class="text-ml">Modtag nyheder via:</h3>
+          <div class="flex items-center justify-evenly gap-2">
+            <div class="h-10 w-10 rounded-xl bg-green-200"></div>
+            <h3 class="text-ml">E-mail</h3>
+          </div>
+          <div class="flex items-center justify-evenly gap-2">
+            <div class="h-10 w-10 rounded-xl bg-green-200"></div>
+            <h3 class="text-ml">SMS</h3>
+          </div>
+        </div>
+        <div class="mt-10 flex w-auto items-center justify-center">
+          <button
+            class="btn w-28 gap-2 rounded-2xl border-yellow-200 bg-green-600 text-sm text-black shadow-2xl"
+          >
+            GEM
+          </button>
+        </div>
+      </div>
+      <div class="mr-10 h-auto w-1/3">
+        <img src="/src/imgs/tomatoes3.png" alt="" />
+      </div>
+    </main>
+
+    <!-- Kotoudtog -->
+    <div class="h-10"></div>
+
+    <!-- homepage leverandør -->
+
+    <main class="max-w-screen">
+      <div class="max-w-screen flex min-h-screen">
+        <div class="h-auto w-1/2">
+          <img
+            src="/src/imgs/leverandor-hero.png"
+            alt=""
+            class="h-auto w-auto"
+          />
+        </div>
+        <div class="flex h-screen w-1/2 flex-col items-center justify-center">
+          <p class="w-4/5 text-lg">
+            Har du brug for et par <b>ekstra timer</b> i dit døgn?
+          </p>
+
+          <p class="mt-8 w-4/5 text-lg">
+            Kunne du bruge at dine bestillinger bare kommer af sig selv, imens
+            du samtidig har overblik over din lagerstyring og dit regnskab -
+            helt automatisk, så du får mere tid til det vigtigste - nemlig at
+            lave maden?
+          </p>
+
+          <p class="mt-8 w-4/5 text-lg">
+            Det er lige præcis hvad SkoleMad kan hjælpe dig med, bestillinger,
+            lagerstyring, regnskab og meget mere.
+          </p>
+        </div>
+      </div>
+      <div
+        class="max-w-screen mt-20 mb-20 flex h-auto flex-col items-center justify-center gap-10"
+      >
+        <p class="w-1/2">
+          Brugervenlig madbestilling over nettet, som ikke stjæler din tid og
+          som dine kunder vil nyde at bruge.
+        </p>
+        <p class="w-1/2">
+          Uanset om din kunde er den travle virksomhed med masser af sultne
+          medarbejdere, eller en skole med kræsne børn og forældre, der gerne
+          vil have lidt hånd i hanke med hvad ungerne spiser, eller måske
+          pensionisten, som gerne vil have god tid til at få overblik over dit
+          store udvalg af madmuligheder.
+        </p>
+        <p class="w-1/2">
+          Som leverandør får du med SkoleMad et smidigt og effektivt system til
+          at klare salget. Ikke alene ved du på forhånd præcis hvor meget der
+          skal fremstilles, du kan også får systemet til automatisk at sende
+          e-mail ordrer til dine underleverandører. For eksempel kan bageren få
+          en e-mail lige over midnat med antallet af boller der skal bages og
+          være klar til om morgenen.
+        </p>
+        <p class="w-1/2">
+          Du får et system, hvor forbrugerne betaler inden du leverer maden. Du
+          får altså ingen problemer med ubetalte regninger. Du får et system,
+          hvor de administrative rutiner er reduceret til et minimum, da
+          systemet kan udskrive de lister og labels der skal bruges helt
+          automatisk. Desuden kan du få statistikker, regnskaber og prognoser
+          når du ønsker det. Systemet kan integreres fuldstændigt med din egen
+          hjemmeside. Se f.eks. Bistrup & Nør, Bogø Sandwich, EAT eller Go Mad
+          til Børn.
+        </p>
+        <p class="w-1/2">
+          Det koster ikke så meget som man kunne tro, læs her hvad det koster.
+        </p>
+        <p class="w-1/2">
+          Kontakt os gerne for en uforpligtende samtale om at blive leverandør.
+        </p>
+      </div>
+    </main>
+
+    <!-- homepage leverandør -->
+
+    <div class="h-10"></div>
+
+    <!-- homepage modtager -->
+
+    <main class="max-w-screen">
+      <div class="max-w-screen flex min-h-screen">
+        <div class="h-auto w-1/2">
+          <img src="/src/imgs/modtager-hero.png" alt="" class="h-auto w-auto" />
+        </div>
+        <div
+          class="ml-20 flex h-screen w-2/5 flex-col items-start justify-center"
+        >
+          <p class="w-4/5 text-2xl font-bold">
+            En modtager af mad fra en af SkoleMads leverandører kan være:
+          </p>
+
+          <ul class="mt-4 ml-4 list-disc">
+            <li class="text-xl font-bold">en skole</li>
+            <li class="mt-2 text-xl font-bold">et firma</li>
+            <li class="mt-2 text-xl font-bold">en kommune</li>
+            <li class="mt-2 text-xl font-bold">
+              eller andre, der er blevet enige om det.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-20 mb-20 flex items-center justify-evenly">
+        <div
+          class="flex h-auto w-1/3 flex-col items-center justify-center gap-10"
+        >
+          <p>
+            SkoleMad vil foreslå en leverandør der i forvejen er i området,
+            eller modtageren kan selv vælge en leverandør. Hvis der ikke er en
+            leverandør i området i forvejen, og modtageren ikke selv har valgt,
+            vil SkoleMad gøre hvad der er muligt for at hjælpe med at finde en
+            passende leverandør.
+          </p>
+          <p>
+            Der er ikke noget fast omsætningskrav, det afhænger både af
+            afstanden fra modtageren til leverandøren og af om leverandøren har
+            andre modtagere i nærheden. Normalt aftales en prøveperiode, og
+            aftalen kan selvfølgelig opsiges fra begge sider med et aftalt
+            varsel.
+          </p>
+          <p>
+            Hvilken mad der tilbydes og til hvilke priser aftales også mellem
+            modtageren og leverandøren. De forskellige leverandører til systemet
+            leverer forskellig mad til forskellige priser.
+          </p>
+          <p>
+            Hvis skolen integrerer skolemaden i undervisningen, kan momsen
+            spares ved at skolen går ind som køber og sælger af maden. Læs mere
+            om momsen her.
+          </p>
+          <p>
+            Kontakt os gerne for en uforpligtende samtale om, hvad I kunne ønske
+            jer.
+          </p>
+        </div>
+        <div class="flex w-1/3 flex-col items-center">
+          <div class="w-96 overflow-auto rounded-xl border-2 border-black">
+            <div
+              class="bg-green-bg flex h-14 w-auto items-center justify-center rounded-t-xl"
+            >
+              <h2 class="text-2xl font-bold text-black">MENU</h2>
+            </div>
+            <div
+              class="mt-8 mb-4 flex w-auto flex-col items-center justify-center"
+            >
+              <div class="flex items-center">
+                <h3 class="text-ml font-bold text-black">UGE 15</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-down ml-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+              <div class="mt-2 mb-4 w-56 border-b-2 border-black"></div>
+            </div>
+            <div
+              class="mt-4 mb-4 flex w-auto flex-col items-center justify-center"
+            >
+              <h4 class="mb-2 text-sm font-bold text-black">Mandag - 21.03</h4>
+              <p
+                class="text-grey text-left text-xs italic text-inherit opacity-50"
+              >
+                Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+              </p>
+              <div class="mt-5 w-24 border-b-2"></div>
+            </div>
+            <div
+              class="mt-4 mb-4 flex w-auto flex-col items-center justify-center"
+            >
+              <h4 class="mb-2 text-sm font-bold text-black">Tirsdag - 22.03</h4>
+              <p
+                class="text-grey text-left text-xs italic text-inherit opacity-50"
+              >
+                Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+              </p>
+              <div class="mt-5 w-24 border-b-2"></div>
+            </div>
+            <div
+              class="mt-4 mb-4 flex w-auto flex-col items-center justify-center"
+            >
+              <h4 class="mb-2 text-sm font-bold text-black">Onsdag - 23.03</h4>
+              <p
+                class="text-grey text-left text-xs italic text-inherit opacity-50"
+              >
+                Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+              </p>
+              <div class="mt-5 w-24 border-b-2"></div>
+            </div>
+            <div
+              class="mt-4 mb-4 flex w-auto flex-col items-center justify-center"
+            >
+              <h4 class="mb-2 text-sm font-bold text-black">Torsdag - 24.03</h4>
+              <p
+                class="text-grey text-left text-xs italic text-inherit opacity-50"
+              >
+                Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+              </p>
+              <div class="mt-5 w-24 border-b-2"></div>
+            </div>
+            <div
+              class="mt-4 mb-10 flex w-auto flex-col items-center justify-center"
+            >
+              <h4 class="mb-2 text-sm font-bold text-black">Fredag - 25.03</h4>
+              <p
+                class="text-grey text-left text-xs italic text-inherit opacity-50"
+              >
+                Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+              </p>
             </div>
           </div>
+          <button
+            class="btn mt-14 w-28 gap-2 rounded-2xl border-yellow-200 bg-green-600 text-sm text-black shadow-2xl"
+          >
+            BESTIL
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- homepage modtager -->
+
+    <div class="h-10"></div>
+
+    <!-- First page -->
+    <main class="max-w-screen flex flex-col">
+      <div
+        class="max-w-screen first-bg mt-14 flex h-auto min-h-screen flex-col items-center justify-center bg-cover bg-no-repeat"
+      >
+        <div
+          class="max-w-screen flex flex-col items-center justify-center gap-2"
+        >
+          <h1 class="text-4xl font-bold text-black">
+            Velkommen til Skolemad.dk
+          </h1>
+          <h2 class="text-2xl font-bold text-black">Hvem er du?</h2>
+        </div>
+        <div class="ml-20 mr-20 flex justify-evenly gap-10">
+          <div
+            class="bg-blue flex h-72 w-72 items-center justify-center rounded-full"
+          >
+            <h3 class="text-2xl font-bold text-white">MODTAGER</h3>
+          </div>
+          <div
+            class="bg-green mt-20 flex h-72 w-72 items-center justify-center rounded-full"
+          >
+            <h3 class="text-2xl font-bold text-white">FORÆLDRER</h3>
+          </div>
+          <div
+            class="bg-pink flex h-72 w-72 items-center justify-center rounded-full"
+          >
+            <h3 class="text-2xl font-bold text-white">LEVERANDØR</h3>
           </div>
         </div>
-        <a class="link link-hover hover:text-accent">KONTAKT</a>
-        <a class="text-xs m-20 "> @ 2022 MUSIKLOFTET </a>
       </div>
-      <div class="m-10 text-white">
-        <a class="link link-hover hover:text-accent">+45 01 02 33 01</a> 
-        <a class="link link-hover hover:text-accent">info@musikloftet.dk</a> 
-        <a class="link link-hover hover:text-accent">Bastionvej 2, Prøvestenen, 2300 KBH S</a> 
-        <div class="grid grid-flow-col gap-10 m-10">
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+      <div class="min-h-screen"></div>
+      <div class="max-w-screen mb-20 flex h-auto items-center justify-evenly">
+        <div
+          class="border-blue flex min-h-screen w-96 flex-col items-center justify-start rounded-3xl border-4"
+        >
+          <h3 class="text-blue mt-8 mb-8 text-3xl font-bold">Til Leverandør</h3>
+          <ul class="mb-8 ml-10 mr-8 flex list-disc flex-col gap-2">
+            <li class="text-sm font-bold text-black">
+              Fuld adgang til netsystemet via internet, app, mobil eller sms
+            </li>
+            <li class="text-sm font-bold text-black">
+              Få din egen hjemmeside i systemet, med eget domæne
+            </li>
+            <li class="text-sm font-bold text-black">
+              Oprette og rette varer med billeder og deklarationer
+            </li>
+            <li class="text-sm font-bold text-black">
+              Hente eller automatisk få tilsendt produktionslister, følgesedler
+              og etiketter til maden
+            </li>
+            <li class="text-sm font-bold text-black">
+              Styre priser og rabatter individuelt pr. skole, pr. klasse eller
+              pr. kunde
+            </li>
+            <li class="text-sm font-bold text-black">
+              Få komplet lagerstyring på styklisteniveau
+            </li>
+            <li class="text-sm font-bold text-black">
+              Oprette tilbud, tilskuds- og rabatordninger
+            </li>
+            <li class="text-sm font-bold text-black">
+              Automatisk udsende e-mail og/eller sms-bestillinger til
+              underleverandører
+            </li>
+            <li class="text-sm font-bold text-black">
+              Styre firmaets eget regnskab med det indbyggede økonomisystem
+            </li>
+            <li class="text-sm font-bold text-black">
+              Oprette medarbejdere, der kan administrere systemet med
+              individuelle rettigheder
+            </li>
+            <li class="text-sm font-bold text-black">
+              Få hurtig support døgnet rundt på telefon, mail, chat, Skype og
+              sms.
+            </li>
+          </ul>
         </div>
-      </div> 
-    </footer>
-    <script type="module" src="index.js"></script>
+        <div
+          class="border-green flex min-h-screen w-96 flex-col items-center justify-start rounded-3xl border-4"
+        >
+          <h3 class="text-green mt-8 mb-8 text-3xl font-bold">Til Forældere</h3>
+          <ul class="mb-8 ml-10 mr-10 flex list-disc flex-col gap-2">
+            <li class="text-sm font-bold text-black">
+              Fuld adgang til netsystemet via internet, app, mobil eller sms
+            </li>
+            <li class="text-sm font-bold text-black">
+              Fuld adgang til netsystemet via internet, app, mobil eller sms
+            </li>
+            <li class="text-sm font-bold text-black">
+              Indbetale penge med de fleste betalingskort, mobilepay, netbank,
+              betalingssystemet eller kontant
+            </li>
+            <li class="text-sm font-bold text-black">Automatisk optanking</li>
+            <li class="text-sm font-bold text-black">
+              Bestille og afbestille mad
+            </li>
+            <li class="text-sm font-bold text-black">
+              Knytte konti sammen og benytteog gøre det nemt at købe til flere.
+            </li>
+            <li class="text-sm font-bold text-black">
+              Samlet overblik over hvad der er bestilt og leveret
+            </li>
+            <li class="text-sm font-bold text-black">
+              Få en email og/eller sms med ved ændringer på kontoen, når der er
+              bestilt eller ikke bestilt mad.
+            </li>
+            <li class="text-sm font-bold text-black">
+              Få udbetalt penge fra kontoen uden gebyr
+            </li>
+            <li class="text-sm font-bold text-black">
+              Hurtig hjælp døgnet rundt på telefon, mail, chat, Skype og sms.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="border-pink flex min-h-screen w-96 flex-col items-center justify-start rounded-3xl border-4"
+        >
+          <h3 class="text-pink mt-8 mb-8 text-3xl font-bold">Til Modtager</h3>
+          <h4 class="ml-8 mb-8 text-sm font-bold text-black">
+            Modtageren kan være en skole, et firma eller en kommune, og får et
+            system, der:
+          </h4>
+          <ul class="mb-8 ml-10 mr-8 flex list-disc flex-col gap-2">
+            <li class="text-sm font-bold text-black">
+              Fuld adgang til netsystemet via internet, app, mobil eller sms
+            </li>
+            <li class="text-sm font-bold text-black">
+              Fungerer helt uden administrativ indsats
+            </li>
+            <li class="text-sm font-bold text-black">
+              Er helt uden omkostninger for modtageren
+            </li>
+            <li class="text-sm font-bold text-black">
+              Giver kunderne den størst mulige frihed i madvalget
+            </li>
+            <li class="text-sm font-bold text-black">
+              Giver modtageren mulighed for selv at vælge leverandør
+            </li>
+            <li class="text-sm font-bold text-black">
+              Giver modtageren mulighed for at yde tilskud til ordningen
+            </li>
+            <li class="text-sm font-bold text-black">
+              Giver modtageren mulighed for at have pengeløs skolebod eller
+              kantine
+            </li>
+            <li class="text-sm font-bold text-black">
+              Giver modtageren mulighed for at være medadministrator på
+              netsystemet
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- First page -->
+    <script type="module" src="index2.js"></script>
   </body>
 </html>
